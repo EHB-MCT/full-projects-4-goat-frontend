@@ -9,13 +9,13 @@ function Schilderij(){
 
         if(number == 1){
             setFrame("Web")
-        } else if(number == 2){
+        } else if(number === 2){
             setFrame("Motion")
-        } else if(number == 3){
+        } else if(number === 3){
             setFrame("Mobile")
-        } else if (number == 4){
+        } else if (number === 4){
             setFrame("Digital")
-        } else if (number == 5) {
+        } else if (number === 5) {
             setFrame ("Game")
         }
 
