@@ -12,7 +12,7 @@
   font-size: 16px;
   height: 30px;
   justify-content: center;
-  line-height: 24px;
+  line-height: 20px;
   max-width: 100%;
   padding: 0 15px;
   position: relative;
@@ -28,12 +28,12 @@
   border-radius: 8px;
   content: "";
   display: block;
-  height: 28px;
+  height: 25px;
   left: 0;
-  width: 98%;
+  width: 96%;
   position: absolute;
   top: -2px;
-  transform: translate(8px, 8px);
+  transform: translate(7px, 7px);
   transition: transform .2s ease-out;
   z-index: -1;
 }
@@ -53,6 +53,6 @@
 
 @media (min-width: 768px) {
   .button-56 {
-    padding: 0 40px;
+    padding: 0 15px;
   }
 }
