@@ -1,10 +1,10 @@
-import React from "react";
+import "../../../scss/schilderij.scss"
 import Nachtwacht from "../../../Assets/Nachtwacht.jpg"
 
 function Schilderij(){
     return(
         <div className="schilderijCont">
-            <img src={Nachtwacht} alt="eindwerk-template"></img>
+            <img id="eindwerk" className="Web" src={Nachtwacht} alt="eindwerk-template"></img>
         </div>
     )
 }
