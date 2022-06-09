@@ -1,8 +1,11 @@
-import "../../scss/beschrijving.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../../scss/beschrijving.scss";
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
 
 function Beschrijving(){
     return(
         <div className="descriptionCont">
+            <FontAwesomeIcon icon={faHeart} className="heartIcon" size="4x"/>
             <div className="mainInfo">
                 <h3 className="titleProjectD">Lincoln</h3>
                 <h4 className="authorProjectD">Henk De Steen</h4>
