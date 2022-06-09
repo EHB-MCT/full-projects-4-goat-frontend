@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Schilderij from "./Schilderij";
 import Tag from "./Tag";
+import "../../../scss/schilderijen.scss"
 
 function Schilderijen(){
     const [tag, setTags] = useState<any>([])
@@ -13,7 +14,7 @@ function Schilderijen(){
 
     const test = tag
     return (
-        <div>
+        <div className="artGallery">
             {test.map((titles: any) => {
                 console.log("Titles", titles.title);
                 return (
