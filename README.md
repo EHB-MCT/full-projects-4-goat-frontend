@@ -18,6 +18,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Sarah L. Fossheim <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: fossheim.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://fossheim.io/writing/posts/css-text-gradient/#:~:text=To%20add%20a%20gradient%20overlay%20to%20a%20text%20element%2C%20we,text%2Dfill%2Dcolor%3A%20transparent
+6. Generate a random number in React  <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Borislav Hadzhiev <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: bobbyhadz.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://bobbyhadz.com/blog/react-generate-random-number#:~:text=Use%20the%20Math.,min%20%2B%201))%20%2B%20min%20.
 
 
 Details and config of the used server
