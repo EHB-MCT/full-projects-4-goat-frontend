@@ -1,5 +1,5 @@
 .artGallery{
-    margin: 15px 0px 0px 10px;
+    margin-top: 15px;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -8,5 +8,10 @@
 }
 
 .artCont{
-    width: 380px;
+    width: 350px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
