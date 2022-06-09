@@ -1,20 +1,20 @@
+@import 'colors';
 /* CSS */
 .button-56 {
   align-items: center;
-  background-color: #fee6e3;
+  background-color: $pink;
   border: 2px solid #111;
   border-radius: 8px;
   box-sizing: border-box;
   color: #111;
   cursor: pointer;
   display: flex;
-  font-family: Inter,sans-serif;
   font-size: 16px;
-  height: 48px;
+  height: 30px;
   justify-content: center;
   line-height: 24px;
   max-width: 100%;
-  padding: 0 25px;
+  padding: 0 15px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -28,9 +28,9 @@
   border-radius: 8px;
   content: "";
   display: block;
-  height: 48px;
+  height: 28px;
   left: 0;
-  width: 100%;
+  width: 98%;
   position: absolute;
   top: -2px;
   transform: translate(8px, 8px);
@@ -43,7 +43,7 @@
 }
 
 .button-56:active {
-  background-color: #ffdeda;
+  background-color: $pink;
   outline: 0;
 }
 
