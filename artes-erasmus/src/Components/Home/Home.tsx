@@ -1,6 +1,6 @@
 import Schilderijen from "./Schilderijen/Schilderijen";
 import TopNav from "../algemeen/topNav";
-import ImageSlider from "../Detail/ImageSlider";
+import DetailPage from "../Detail/DetailPage";
 
 function Home(){
 
@@ -8,7 +8,7 @@ function Home(){
         <div>
             <TopNav/>
             {/* <Schilderijen/> */}
-            <ImageSlider/>
+            <DetailPage/>
         </div>
     )
 }
