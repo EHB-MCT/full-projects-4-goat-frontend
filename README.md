@@ -12,7 +12,7 @@ Reference to used code
 3. Eindwerken Hannelore Maes en Liese Cordeyn
 4. Image Gallery Slider on detailpage <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Dave Howson <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: Codesandbox <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codesandbox.io <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codesandbox.io/s/github/davehowson/react-image-carousel?file=/src/components/image-carousel/index.tsx
 5. Add gradient overlay to text <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Sarah L. Fossheim <br/>
@@ -22,7 +22,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Borislav Hadzhiev <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: bobbyhadz.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://bobbyhadz.com/blog/react-generate-random-number#:~:text=Use%20the%20Math.,min%20%2B%201))%20%2B%20min%20.
-
+7. Using Font Awesome with React  <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Font Awesome <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: fontawesome.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://fontawesome.com/v5/docs/web/use-with/react
 
 Details and config of the used server
 --------------------------
