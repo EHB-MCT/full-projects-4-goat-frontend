@@ -27,12 +27,14 @@ header {
 }
 
 .gradient-text {
-    background-color: $blue;
-    background-image: linear-gradient(to bottom, $blue 0%, $blue 45%, $red 46%, $red 50%,  $pink 51%, $pink 55%, $orange 56%, $orange 60%, $yellow 61%, $yellow 100%);
+    background-color: #EAE7D9;
+    -webkit-text-stroke: 1px black;
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    text-shadow: 0px 0px 0 #EAE7D9, 3px 3px 0 $yellow, 6px 6px 0 $red,
+    9px 9px 0 $blue;
 }

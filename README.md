@@ -30,6 +30,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: The Plumber <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: kindacode.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://www.kindacode.com/article/how-to-make-a-modal-box-from-scratch-in-reactjs/
+9. Add shadow text to text <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Radu <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codepen.io <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codepen.io/maxym11/pen/vYLKNYO
 
 Details and config of the used server
 --------------------------
