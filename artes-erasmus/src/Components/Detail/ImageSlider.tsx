@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ImageCarousel, { ImageType } from "./ImageCarousel";
 import "../../scss/imageslider.scss";
 
-export default function App() {
+function ImageSlider() {
   const [images, setImages] = useState<ImageType[]>();
 
   useEffect(() => {
@@ -20,3 +20,5 @@ export default function App() {
     </div>
   );
 }
+
+export default ImageSlider
