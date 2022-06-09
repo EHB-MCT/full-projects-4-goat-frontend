@@ -1,25 +1,22 @@
-import Web from "../../Assets/web-badge-2.png"
-import Motion from "../../Assets/motion-badge-2.png"
-import Mobile from "../../Assets/mobile-badge-2.png"
-import Digital from "../../Assets/digital-badge-2.png"
-import Game from "../../Assets/game-badge-2.png"
-import Nachtwacht from "../../Assets/Nachtwacht.jpg"
-import "../../scss/imageslider.scss"
+import { useEffect, useState } from "react";
+import ImageCarousel, { ImageType } from "./ImageCarousel";
+import "../../scss/imageslider.scss";
 
-function ImageSlider(){
-    return(
-        <div className="imageCont">
-            <img src={Nachtwacht} alt="image-project" />
+export default function App() {
+  const [images, setImages] = useState<ImageType[]>();
 
-            <div className="previewImagesCont">
-                <img src={Nachtwacht} alt="image-project" />
-                <img src={Nachtwacht} alt="image-project" />
-                <img src={Nachtwacht} alt="image-project" />
-                <img src={Nachtwacht} alt="image-project" />
-                <img src={Nachtwacht} alt="image-project" />
-            </div>
-        </div>
-    )
+  useEffect(() => {
+    setImages(
+      Array.from(Array(10).keys()).map((id) => ({
+        id,
+        url: `https://picsum.photos/1000?random=${id}`
+      }))
+    );
+  }, []);
+
+  return (
+    <div className="App">
+      <ImageCarousel images={images} />
+    </div>
+  );
 }
-
-export default ImageSlider
