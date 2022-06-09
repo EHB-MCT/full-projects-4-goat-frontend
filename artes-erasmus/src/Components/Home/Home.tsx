@@ -1,11 +1,10 @@
-import React from "react";
-import Schilderij from "./Schilderijen/Schilderij";
+import Schilderijen from "./Schilderijen/Schilderijen";
 
 function Home(){
 
     return (
         <div>
-            <Schilderij/>
+            <Schilderijen/>
         </div>
     )
 }
