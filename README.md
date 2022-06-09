@@ -26,6 +26,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Font Awesome <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: fontawesome.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://fontawesome.com/v5/docs/web/use-with/react
+8. Modal in React  <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: The Plumber <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: kindacode.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://www.kindacode.com/article/how-to-make-a-modal-box-from-scratch-in-reactjs/
 
 Details and config of the used server
 --------------------------

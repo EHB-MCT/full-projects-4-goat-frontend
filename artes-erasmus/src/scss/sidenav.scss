@@ -1,0 +1,19 @@
+@import 'colors';
+
+#sideNav {
+    position: fixed;
+    height: 100vh;
+    width: 10vw;
+    background-color: #515151;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-right: 25px solid;
+    border-image: linear-gradient(to right, $blue 0%, $blue 97.76%, $red 97.77%,  $red 98.32% , $pink 98.33%, $pink 98.88%, $orange 98.89%, $orange 99.44%, $yellow 99.45%, $yellow 100%) 5;
+}
+
+#sideNav a img {
+    width: 6vw;
+}
