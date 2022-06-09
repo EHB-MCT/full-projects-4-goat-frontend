@@ -1,10 +1,12 @@
 import React from "react";
+import TopNav from "./algemeen/topNav";
+
 
 function Home(){
 
     return (
         <div>
-            <h1>HOME</h1>
+            <TopNav/>
         </div>
     )
 }
