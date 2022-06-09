@@ -15,7 +15,7 @@ function ImageSlider() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="sliderCont">
       <ImageCarousel images={images} />
     </div>
   );
