@@ -16,7 +16,6 @@ function Schilderijen(){
     return (
         <div className="artGallery">
             {test.map((titles: any) => {
-                console.log("Titles", titles.title);
                 return (
                     <div className="artCont">
                         <Schilderij/>

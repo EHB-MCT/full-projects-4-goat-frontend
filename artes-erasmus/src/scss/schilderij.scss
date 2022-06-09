@@ -1,24 +1,26 @@
+@import 'colors';
+
 #eindwerk{
     width: 100%;
 }
 
 .Web{
     margin: 0%;
-    border: 12px solid #78C6D0; 
+    border: 12px solid $blue; 
 }
 .Motion{
     margin: 0%;
-    border: 12px solid #DFC0F8; 
+    border: 12px solid $pink; 
 }
 .Mobile{
     margin: 0%;
-    border: 12px solid #FDEEB3; 
+    border: 12px solid $yellow; 
 }
 .Digital{
     margin: 0%;
-    border: 12px solid #F6B4F1; 
+    border: 12px solid $red; 
 }
 .Game{
     margin: 0%;
-    border: 12px solid #BBDCCB; 
+    border: 12px solid $orange; 
 }

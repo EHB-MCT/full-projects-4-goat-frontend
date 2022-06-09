@@ -1,10 +1,28 @@
-.tagCont{
+.tagCont {
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 2px solid white;
-    width: fit-content;
+    justify-content: space-around;
+    padding: 2px;
+    width: 80%;
+    height: 7vh;
+    background-color: #707070;
 }
-.titleProject, .authorPorject{
+
+
+.titleProject,
+.authorPorject {
     color: white;
+    font-weight: 600;
+    font-size: 10pt;
+    margin: 0 15px;
+}
+
+.titleProject {
+    max-height: 5vh;
+    overflow: hidden;
+}
+
+.authorPorject {
+    font-weight: 400;
 }
