@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;800&display=swap');
+@import './scss/colors.scss';
 
 body {
   margin: 0;
@@ -14,3 +15,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(155, 155, 155);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background: linear-gradient(to top, $blue 0%, $blue 20%, $red 21%,  $red 40% , $pink 41%, $pink 60%, $orange 61%, $orange 80%, $yellow 81%, $yellow 100%);
+} 
