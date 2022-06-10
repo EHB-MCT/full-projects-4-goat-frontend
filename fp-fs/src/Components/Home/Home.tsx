@@ -4,7 +4,7 @@ import Nav from "./Nav"
 function Home(){
     return(
         <div className="homeContainer">
-            <Nav/>
+            <nav><Nav/></nav>
         </div>
     )
 }
