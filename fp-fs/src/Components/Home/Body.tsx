@@ -3,10 +3,11 @@ import "../../SCSS/Body.scss"
 function Body(){
     return(
         <div className="bodyContainer">
-            <span id="blue"></span>
-            <span id="red"></span>
-            <span id="orange"></span>
-            <span id="yellow"></span>
+            <div id="blue"></div>
+            <div id="red"></div>
+            <div id="orange"></div>
+            <div id="yellow"></div>
+            <div id="pink"></div>
         </div>
     )
 }
