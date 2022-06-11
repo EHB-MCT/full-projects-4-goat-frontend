@@ -1,0 +1,10 @@
+.footerImg{
+    width: 120px;
+    height: auto;
+}
+
+@media (min-width: 780px){
+    .footerImg{
+        width: 150px;
+    }
+}
