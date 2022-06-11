@@ -34,6 +34,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Radu <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codepen.io <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codepen.io/maxym11/pen/vYLKNYO
+10. Hamburger menu <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Álvaro <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codepen.io <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codepen.io/alvarotrigo/pen/MWEJEWG
 
 Details and config of the used server
 --------------------------
