@@ -1,10 +1,13 @@
-import Nav from "./Nav"
+import Nav from "../Standard/Nav";
+import Footer from "../Standard/Footer";
+import "../../SCSS/Home.scss"
 
 
 function Home(){
     return(
         <div className="homeContainer">
-            <Nav/>
+            <nav><Nav/></nav>
+            <footer><Footer/></footer>
         </div>
     )
 }
