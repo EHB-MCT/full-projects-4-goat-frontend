@@ -4,7 +4,7 @@ import side_1 from '../../Assets/side_1.png'
 import side_2 from '../../Assets/side_2.png'
 import side_3 from '../../Assets/side_3.png'
 
-export default function Cassette(){
+export default function Cassette(props: any){
 
     const [cassette, setCassette] = useState(String)
 
@@ -24,6 +24,9 @@ export default function Cassette(){
 
     return (
         <div className="cassette">
+            <div className='cassetteNameDiv'>
+            <h1 className='cassetteName'>{props.data.title}</h1>
+            </div>
              <img src={cassette} alt="cassete" />
         </div>
        

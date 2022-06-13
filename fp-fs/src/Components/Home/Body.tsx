@@ -27,8 +27,10 @@ function Body(){
             <div className="cassettesContainer">
                 {
                 finalWorks.map(x => {
-                    return <Cassette key={x["id"]}></Cassette>
-                })}
+                    return <Cassette data={x} key={x["id"]} ></Cassette>
+                })}  
+
+                
             </div>
             
         </div>
