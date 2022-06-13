@@ -9,9 +9,9 @@ function Nav(){
             <section className="navContainer">
                 <img className='logoFinalGroot' src={Logo} alt="logo-final-show" />
                 <div className='ButtonsNav'>
-                    <button className='uploadenBtn btn'>Uploaden</button>
-                    <button className='stemmenBtn btn'>Stemming</button>
-                    <button className='searchBtn btn'>Search</button>
+                    <button className='uploadenBtn btn'>Resultaten</button>
+                    <button className='stemmenBtn btn'>Uploaden</button>
+                    <button className='searchBtn btn'>Stemming</button>
                 </div>
             </section>
             <section className="top-nav">
