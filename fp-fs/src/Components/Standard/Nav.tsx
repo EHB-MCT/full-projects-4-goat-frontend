@@ -8,7 +8,7 @@ function Nav(){
     return(
         <div>
             <section className="navContainer">
-                <img className='logoFinalGroot' src={Logo} alt="logo-final-show" />
+                <Link to="/"><img className='logoFinalGroot' src={Logo} alt="logo-final-show" /></Link>
                 <div className='ButtonsNav'>
                     <button className='uploadenBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
                     <button className='stemmenBtn btn'>Uploaden</button>
