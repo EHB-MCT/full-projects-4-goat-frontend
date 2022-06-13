@@ -5,17 +5,12 @@ import Reality from "../../Assets/Extended-Reality.png";
 import Smart from "../../Assets/Smart-Technologies.png";
 import Cassette1 from "../../Assets/suspiria.svg";
 import Cassette2 from "../../Assets/halloween.svg";
+import Stripes from "./Stripes";
 
 function Body(){
     return(
         <div className="bodyContainer">
-            <div className="stripesSide">
-                <div id="blue"></div>
-                <div id="red"></div>
-                <div id="orange"></div>
-                <div id="yellow"></div>
-                <div id="pink"></div>
-            </div>
+            <Stripes/>
             <div className="cassettesContainer">
                 <img className="cassette" src={Smart} alt="smart-technologies-cassette" />
                 <img className="cassette" src={Motion} alt="motion-cassette" />
