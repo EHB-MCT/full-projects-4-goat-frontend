@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Final-Show-Logo.svg'
 import '../../SCSS/Button.scss'
 import '../../SCSS/Nav.scss'
@@ -9,7 +10,7 @@ function Nav(){
             <section className="navContainer">
                 <img className='logoFinalGroot' src={Logo} alt="logo-final-show" />
                 <div className='ButtonsNav'>
-                    <button className='uploadenBtn btn'>Resultaten</button>
+                    <button className='uploadenBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
                     <button className='stemmenBtn btn'>Uploaden</button>
                     <button className='searchBtn btn'>Stemming</button>
                 </div>
