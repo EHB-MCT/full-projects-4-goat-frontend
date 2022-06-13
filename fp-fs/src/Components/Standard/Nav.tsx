@@ -23,7 +23,8 @@ function Nav(){
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
-                    <li><button className='btn btnMobile'>Resultaten</button></li>
+                    <li><button className='btn btnMobile'>Genomineerde</button></li>
+                    <li><button className='btn btnMobile'>Winnaars</button></li>
                     <li><button className='btn btnMobile'>Uploaden</button></li>
                     <li><button className='btn btnMobile'>Stemming</button></li>
                 </ul>
