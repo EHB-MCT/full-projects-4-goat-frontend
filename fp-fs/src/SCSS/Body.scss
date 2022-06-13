@@ -1,6 +1,15 @@
 @import 'Colors';
 
 .cassettesContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    background-image: url('../Assets/Background-Raster.svg');
+    margin-top: 4vh;
+}
+
+/*
+.cassettesContainer {
     transform: rotate(-90deg);
     height: auto;
     display: flex;
@@ -74,5 +83,5 @@
     .last{
         margin-right: 0%;
     }
-}
+} */
 

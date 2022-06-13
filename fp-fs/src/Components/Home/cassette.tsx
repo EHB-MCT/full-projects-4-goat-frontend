@@ -1,5 +1,10 @@
+import '../../SCSS/cassette.scss'
+
 export default function Cassette(){
     return (
-        <p>test</p>
+        <div className="cassette">
+             <p>test</p>
+        </div>
+       
     )
 }
