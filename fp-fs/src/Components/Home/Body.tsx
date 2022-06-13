@@ -17,27 +17,44 @@ function Body(){
 
 
     return(
-        <div className="bodyContainer">
-            <div className="stripesSide">
-                <div id="blue"></div>
-                <div id="red"></div>
-                <div id="orange"></div>
-                <div id="yellow"></div>
-                <div id="pink"></div>
+        <main>
+            <div>
+                <div id="searchForm">
+                    <input type="text" /> search 
+                    
+                    <select>
+                        <option value="" disabled>Clusters</option>
+                        <option value="Web en app">Web en App</option>
+                        <option value="Smart Technologies">Smart Technologies</option>
+                        <option value="Motion">Motion</option>
+                        <option value="Extended Reality">Extended Reality</option>
+                    </select>
+                </div>
             </div>
-            <div id="filterButton">
-                <button className="btn filterButtonPhone">Filter</button>
-            </div>
-            <div className="cassettesContainer">
-                {
-                finalWorks.map(x => {
-                    return <Cassette data={x} key={x["id"]} ></Cassette>
-                })}  
+            <div className="bodyContainer">
+                <div className="stripesSide">
+                    <div id="blue"></div>
+                    <div id="red"></div>
+                    <div id="orange"></div>
+                    <div id="yellow"></div>
+                    <div id="pink"></div>
+                </div>
+            
+                <div id="filterButton">
+                    <button className="btn filterButtonPhone">Filter</button>
+                </div>
+                <div className="cassettesContainer">
+                    {
+                    finalWorks.map(x => {
+                        return <Cassette data={x} key={x["id"]} ></Cassette>
+                    })}  
 
+                    
+                </div>
                 
             </div>
-            
-        </div>
+        </main>
+       
     )
 }
 export default Body
