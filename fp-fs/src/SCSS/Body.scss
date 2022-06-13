@@ -8,15 +8,6 @@
     margin-top: 4vh;
 }
 
-/*
-.cassettesContainer {
-    transform: rotate(-90deg);
-    height: auto;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-
 @media (min-width: 780px){
     .bodyContainer{
         margin-top: 38px;
@@ -66,6 +57,26 @@
         transform: skew(-13deg);
         background: $pink;
     }
+
+    .cassettesContainer {
+        width: 70vw;
+    }
+
+}
+
+/*
+.cassettesContainer {
+    transform: rotate(-90deg);
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+@media (min-width: 780px){
+
+
+    
 
     .cassettesContainer{
         margin-right: 3%;

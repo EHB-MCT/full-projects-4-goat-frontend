@@ -31,3 +31,18 @@
     display: table-cell;
     vertical-align: middle;
 }
+
+@media (min-width: 780px){
+   .cassette {
+       height: 60vh;
+   }
+
+   .cassette img {
+       height: 58vh;
+   }
+
+
+   .cassetteName {
+       height: 40vh;
+   }
+}

@@ -26,3 +26,9 @@
     width: 30vw;
     margin: auto;
 }
+
+@media (min-width: 780px){
+    .filterButtonPhone {
+        display: none;
+    }
+}
