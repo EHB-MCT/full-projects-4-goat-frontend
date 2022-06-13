@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../SCSS/Body.scss";
+import "../../SCSS/Button.scss"
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "./cassette";
 
@@ -23,6 +24,9 @@ function Body(){
                 <div id="orange"></div>
                 <div id="yellow"></div>
                 <div id="pink"></div>
+            </div>
+            <div id="filterButton">
+                <button className="btn filterButtonPhone">Filter</button>
             </div>
             <div className="cassettesContainer">
                 {
