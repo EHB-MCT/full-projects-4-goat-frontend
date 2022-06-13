@@ -1,0 +1,31 @@
+@import "Colors";
+
+#selectionGenomOrWins {
+    position: fixed;
+    left: 26%;
+    top: 18%;
+    display: flex;
+    width: 100vw;
+    padding-left: 2em;
+}
+
+#selectionGenomOrWins p{
+    margin-right: 2em;
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+#selectionGenomOrWins p:hover{
+    cursor: pointer;
+}
+
+#mainContent {
+    position: absolute;
+    left: 25%;
+    top: 24%;
+    z-index: -900;
+}
+
+.activeSelection {
+    box-shadow: 0 -2px $blue inset,0 -4px $red inset, 0 -6px $yellow inset;
+}
