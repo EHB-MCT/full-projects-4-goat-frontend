@@ -1,5 +1,13 @@
 @import 'Colors';
 
+.cassettesContainer {
+    transform: rotate(-90deg);
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 @media (min-width: 780px){
     .bodyContainer{
         margin-top: 38px;
@@ -55,6 +63,7 @@
         padding: 2% 0%;
         width: 64%;
         background-image: url(../Assets/Background-Raster.svg);
+        transform: rotate(360deg);
     }
 
     .cassette{
@@ -66,3 +75,4 @@
         margin-right: 0%;
     }
 }
+
