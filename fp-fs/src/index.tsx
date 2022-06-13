@@ -4,6 +4,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Results from './Components/Resultaten/Results';
+import Genomineerd from './Components/Resultaten/Genomineerd';
+import Winnaar from './Components/Resultaten/Winnaar';
 
 
 const root = ReactDOM.createRoot(
@@ -14,6 +16,8 @@ root.render(
     <Routes>
       <Route path="/"  element={<App/>}/>
       <Route path="/results"  element={<Results/>}/>
+      <Route path="/results/genomineerden"  element={<Genomineerd/>}/>
+      <Route path="/results/winnaars"  element={<Winnaar/>}/>
       <Route path="*" element={
         <h1>Page not found</h1>
       } />
