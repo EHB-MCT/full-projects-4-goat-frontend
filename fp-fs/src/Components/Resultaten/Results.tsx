@@ -35,7 +35,7 @@ function Results() {
     return(
       <main>
           <Nav/> 
-          <div id="selectionIngrOrSteps">
+          <div id="selectionGenomOrWins">
              <Link to="/results/genomineerden" className="routingLinks"><p className={styleGenom} onClick={setToGenom}>Genomineerden</p></Link> 
              <Link to="/results/winnaars" className="routingLinks"><p className={styleWin} onClick={setToWin}>Winnaars</p></Link> 
           </div>
