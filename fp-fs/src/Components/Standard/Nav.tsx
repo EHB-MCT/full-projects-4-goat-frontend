@@ -23,9 +23,9 @@ function Nav(){
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
-                    <li>Resultaten</li>
-                    <li>Uploaden</li>
-                    <li>Stemming</li>
+                    <li><button className='btn btnMobile'>Resultaten</button></li>
+                    <li><button className='btn btnMobile'>Uploaden</button></li>
+                    <li><button className='btn btnMobile'>Stemming</button></li>
                 </ul>
             </section>
         </div>
