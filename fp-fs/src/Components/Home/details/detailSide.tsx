@@ -35,7 +35,7 @@ export default function DetailSide(props: any) {
 
 
     return (
-    <div>
+    <div className='detailContainer'>
         <img src={cover} alt="" className='cover'/>
 
         <div className='onCoverElement'>
