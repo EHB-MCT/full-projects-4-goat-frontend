@@ -1,4 +1,4 @@
-import React from "react";
+import "../../SCSS/Genomineerd.scss";
 
 function Genomineerd(){
     return(
