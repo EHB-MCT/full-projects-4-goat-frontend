@@ -4,6 +4,8 @@ import "../../SCSS/Home.scss"
 import "../../SCSS/ResultsNav.scss"
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import Winnaar from "./Winnaar";
+import Genomineerd from "./Genomineerd";
 
 function Results() {
   
@@ -15,49 +17,33 @@ function Results() {
 
     
     useEffect(() => {
-        setSelection("ingredients")
+        setSelection("genomineerd")
         setStyleWin("not-active")
         setStyleGenom("activeSelection")
     },[params.Id])
 
     const setToWin = () => {
-        setSelection("steps")
+        setSelection("winnaars")
         setStyleWin("activeSelection")
         setStyleGenom("not-active")
     }
 
     const setToGenom = () => {
-        setSelection("ingredients")
+        setSelection("genomineerd")
         setStyleWin("not-active")
         setStyleGenom("activeSelection")
     }
    
     return(
-      <main>
-          <Nav/> 
-          <div id="selectionGenomOrWins">
-             <Link to="/results/genomineerden" className="routingLinks"><p className={styleGenom} onClick={setToGenom}>Genomineerden</p></Link> 
-             <Link to="/results/winnaars" className="routingLinks"><p className={styleWin} onClick={setToWin}>Winnaars</p></Link> 
-          </div>
-          <div id="mainContent">
-              <h1>Hallo</h1>
-          </div>
-          <footer><Footer/></footer>
-      </main> 
+        <main id="winGenomContainer">
+            <div id="selectionGenomOrWins">
+                <p className={styleGenom} onClick={setToGenom}>Genomineerden</p>
+                <p className={styleWin} onClick={setToWin}>Winnaars</p>            
+            </div>
+            <div id="mainContent">
+                { selection === "genomineerd"? <Genomineerd/> :  <Winnaar/> }
+            </div>
+        </main>
     )
-
-  // return (
-  //   <div>
-  //     <nav><Nav/></nav>
-
-  //     <section className="navContainer">
-  //       <button className='stemmenBtn btn'>Genomineerde</button>
-  //       <button className='searchBtn btn'>Winnaars</button>
-  //     </section>
-
-  //     <footer><Footer/></footer>
-  //   </div>
-    
-  // )
 }
 export default Results
