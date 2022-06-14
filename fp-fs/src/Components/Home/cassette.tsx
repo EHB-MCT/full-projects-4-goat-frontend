@@ -69,6 +69,7 @@ export default function Cassette(props: any){
 
 
     return (
+
         <div className='fullCassette'>
             <div className="cassette" onClick={changeShowSide}>
                 <div className='cassetteNameDiv'>

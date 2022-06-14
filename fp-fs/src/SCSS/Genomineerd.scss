@@ -1,0 +1,35 @@
+// .cassettesContainer{
+//     width: 50%;
+// }
+
+.allClusters{
+    display: none;
+}
+
+@media (min-width: 780px){
+    .allClusters{
+        display: block;
+    }
+
+    .cassette{
+        height: 50vh;
+    }
+    
+    .cassette img{
+        height: 50vh;
+    }
+    
+    .logoImgcluster{
+        display: block;
+        width: 30vh;
+        height: auto;
+    }
+    .motionImg, .appImg, .realityImg, .smartImg{
+        height: 15vh;
+        margin: 0% 0% 5% 15%;
+    }
+    
+    .motionImg{
+        margin-top: -6%;
+    }
+}
