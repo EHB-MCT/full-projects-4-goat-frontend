@@ -38,47 +38,13 @@ export default function DetailSide(props: any) {
 
         <div className='onCoverElement'>
             <div id="stripeCluster">
-                <h3>Motion</h3>
-                <div id="colorStripe"></div>
+                {/* <div id="colorStripe"></div> */}
+                <h3 className='clusterName'>Motion</h3>
             </div>
             <h1 id="projectArtist">Boutaârourte Yousra</h1>
             <div id="projectName">
-                <h5>PROJECT</h5>
-                <p>Autisme</p>
-            </div>
-            <span>Image Slider</span>
-            
-            <h3>PROJECTBESCHRIJVING</h3>
-            <p>Ik was ooit verliefd en ben afgewezen, toen begon 
-                ik maar aan deze richting. #SadStory. Ik was ooit verliefd en ben afgewezen, toen begon ik maar aan deze richting 
-                #SadStory.  Ik was ooit verliefd en ben afgewezen, toen begon 
-                ik maar aan deze richting. #SadStory. Ik was ooit verliefd en ben afgewezen, toen begon 
-                ik maar aan deze richting 
-                #SadStory. 
-            </p>
-
-            <div id="personalInfo">
-                <span id="stripeContact"></span>
-                <img src="../../../Assets/search.png" alt="profile-pick"/>
-                <div id="contactInfoContainer">
-                    <div id="tel">
-                        <p>Tel:</p>
-                        <p>0123456789</p>
-                    </div>
-                    <div id="mail">
-                        <p>Mail:</p>
-                        <p>yousra.boutaârourte@student.ehb.be</p>
-                    </div>
-                    <div id="linkedIn">
-                        <p>LinkedIn:</p>
-                        <p>Boutaârourte Yousra</p>
-                    </div>
-                    <div id="Instagram">
-                        <p>LinkedIn:</p>
-                        <p>@Boutaârourte_Yousra</p>
-                    </div>
-                    <span id="shareIcon"></span>
-                </div>
+                <h5 className='projectPlaceHolder'>PROJECT:</h5>
+                <p className='nameProject'>Autisme</p>
             </div>
         </div>
     </div>

@@ -1,3 +1,5 @@
+@import 'Colors';
+
 h3, h1, h5, p, span, div, img{
     background-color: transparent;
     color: white;
@@ -17,7 +19,40 @@ div {
 .onCoverElement{
     background-color: transparent;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 8px;
+    left: 8px;
+}
+
+.clusterName{
+    font-size: 9pt;
+    width: 8vw;
+    height: 2vh;
+    margin-top: 2%;
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectArtist{
+    font-size: 19pt;
+    margin: 0%;
+    font-weight: 900;
+}
+
+#projectName{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projectPlaceHolder{
+    font-weight: 700;
+    font-size: 10pt;
+    margin: 0% 3% 0% 0%;
+}
+.nameProject{
+    font-size: 10pt;
+    margin: 0% 5% 0% 0%;
+    font-weight: 400;
 }
