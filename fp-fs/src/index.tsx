@@ -23,8 +23,8 @@ root.render(
         <Routes>
           <Route path="/"  element={<App/>}/>
           <Route path="/results"  element={<Results/>}/>
-          <Route path="/results/genomineerden"  element={<Genomineerd/>}/>
-          <Route path="/results/winnaars"  element={<Winnaar/>}/>
+          <Route path="/genomineerden"  element={<Genomineerd/>}/>
+          <Route path="/winnaars"  element={<Winnaar/>}/>
           <Route path="*" element={
             <h1>Page not found</h1>
           } />
