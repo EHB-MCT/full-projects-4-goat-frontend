@@ -1,13 +1,27 @@
-.cassette{
-    height: 50vh;
-}
+// .cassettesContainer{
+//     height: 45vh;
+// }
 
-.cassette img{
-    height: 48vh;
-}
+// .cassette, .cassette img {
+//     height: 34vh;
+// }
+
+// .cassetteName{
+//     font-size: 9pt;
+//     height: 22vh;
+// }
 
 .logoImgcluster{
+    display: block;
     width: 30vh;
     height: auto;
-    margin: 0% 0% 0% 15%;
+}
+
+.motionImg, .appImg, .realityImg, .smartImg{
+    height: 15vh;
+    margin: -6% 0% 4% 15%;
+}
+
+.last{
+    margin-bottom: 7%;
 }
