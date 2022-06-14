@@ -22,7 +22,7 @@ function Genomineerd(){
 
 
     return(
-        <div>
+        <div className="allClusters">
             <div className="motionGenom">
                 <div className="motionImg">
                     <img className="logoImgcluster" src={Motion} alt="name-cluster-logo" />
@@ -60,7 +60,7 @@ function Genomineerd(){
                 <div className="smartImg">
                     <img className="logoImgcluster" src={Smart} alt="name-cluster-logo" />
                 </div>
-                <div className="cassettesContainer last">
+                <div className="cassettesContainer">
                     {
                     finalWorks.map(x => {
                         return <Cassette data={x} key={x["id"]} ></Cassette>
