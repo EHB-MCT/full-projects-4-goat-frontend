@@ -78,4 +78,8 @@
     .cassetteName {
         height: 40vh;
     }
+
+    .cassette:hover {
+        transform: scale(0.9);
+    }
 }
