@@ -36,13 +36,6 @@ function Body(){
                 </div>
             </div>
             <div className="bodyContainer">
-                <div className="stripesSide">
-                    <div id="blue"></div>
-                    <div id="red"></div>
-                    <div id="orange"></div>
-                    <div id="yellow"></div>
-                    <div id="pink"></div>
-                </div>
                 <div id="filterButton">
                     <button className="btn filterButtonPhone">Filter</button>
                 </div>

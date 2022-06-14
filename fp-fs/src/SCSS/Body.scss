@@ -13,64 +13,15 @@
 }
 
 @media (min-width: 780px){
-
-    .bodyContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .stripesSide{
-        margin-top: 3.5%;
-        margin-right: 2%;
-    }
-
-    #blue {
-        width: 220px;
-        height: 80px;
-        margin: 0 0 0 -20px;
-        transform: skew(-13deg);
-        background: $blue;
-    }
-    #red {
-        width: 201.5px;
-        height: 80px;
-        margin: 0 0 0 -20px;
-        transform: skew(-13deg);
-        background: $red;
-    }
-    #orange {
-        width: 183.5px;
-        height: 80px;
-        margin: 0 0 0 -20px;
-        transform: skew(-13deg);
-        background: $orange;
-    }
-    #yellow {
-        width: 165.5px;
-        height: 80px;
-        margin: 0 0 0 -20px;
-        transform: skew(-13deg);
-        background: $yellow;
-    }
-    #pink {
-        width: 146.5px;
-        height: 80px;
-        margin: 0 0 0 -20px;
-        transform: skew(-13deg);
-        background: $pink;
-    }
-
-
     .cassettesContainer {
-        width: 72%;
+        margin-left: 15%;
+        width: 85%;
     }
 
     #searchForm {
         display: block;
         width: 67%;
-        margin-left:19vw;
+        margin-left:5.8vw;
         margin-top: 2vh;
     }
 
