@@ -13,8 +13,11 @@ export default function Cassette(props: any){
 
     const [cassette, setCassette] = useState(String)
     const [cluster, setCluster] = useState(String)
+    const [showSide, setShowSide] = useState(Boolean)
 
     useEffect(() => {
+
+        setShowSide(false)
 
         var number = Math.floor(Math.random() * (6 - 1 + 1)) + 1
 
@@ -46,13 +49,21 @@ export default function Cassette(props: any){
 
     }, [])
 
+    const changeShowSide = () => {
+        if(showSide === false) {
+            setShowSide(true)
+        } else {
+            setShowSide(false)
+        }
+       
+    }
 
 
 
 
     return (
         <div className='fullCassette'>
-            <div className="cassette">
+            <div className="cassette" onClick={changeShowSide}>
                 <div className='cassetteNameDiv'>
                      <h1 className='cassetteName'>{props.data.title}</h1>
                 </div>
@@ -63,9 +74,7 @@ export default function Cassette(props: any){
                 </div>
                         
             </div>
-            <DetailSide></DetailSide>
-   
-       
+            {showSide? <DetailSide></DetailSide>: <p></p>}
         </div>
        
     )
