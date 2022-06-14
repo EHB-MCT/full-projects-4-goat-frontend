@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import "../../SCSS/Genomineerd.scss";
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "../Home/cassette";
-import "../../SCSS/cassette.scss"
+import "../../SCSS/cassette.scss";
+import "../../SCSS/Genomineerd.scss";
+
+import Motion from "../../Assets/Logos-Clusters/MOTION_Logo.svg"
 
 function Genomineerd(){
     const [finalWorks, setFinalWorks] = useState([])
@@ -16,11 +19,14 @@ function Genomineerd(){
 
 
     return(
-        <div className="cassettesContainer">
-            {
-            finalWorks.map(x => {
-                return <Cassette data={x} key={x["id"]} ></Cassette>
-            })}     
+        <div className="webAppGenom">
+            <img className="logoImgcluster" src={Motion} alt="name-cluster-logo" />
+            <div className="cassettesContainer">
+                {
+                finalWorks.map(x => {
+                    return <Cassette data={x} key={x["id"]} ></Cassette>
+                })}
+            </div>     
         </div>       
     )
 }
