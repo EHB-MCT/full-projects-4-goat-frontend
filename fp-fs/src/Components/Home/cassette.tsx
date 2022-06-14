@@ -75,7 +75,7 @@ export default function Cassette(props: any){
                 <div className='cassetteNameDiv'>
                      <h1 className='cassetteName'>{props.data.title}</h1>
                 </div>
-                <img src={cassette} alt="cassete" />
+                <img src={cassette} alt="cassette" />
                 <div className='clusterColors'>
                     <div className={cluster}></div>
                     <div className={cluster}></div>
