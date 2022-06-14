@@ -68,7 +68,39 @@
 
     #searchForm {
         display: block;
+        width: 60vw;
+        margin-left:29.4vw;
     }
+
+    input {
+        border: none;
+        border-bottom: 1px solid gray;
+        width: 35vw;
+        padding: 5px;
+    }
+
+    input:active {
+        border: none;
+        outline:none;
+    }
+
+    input:focus {
+        border: none;
+        outline:none;
+        border-bottom: 1px solid gray;
+    }
+
+    select {
+        margin-left: 100px;
+        width: 15vw;
+        padding: 5px;
+    }
+
+    #searchIcon {
+        width: 22px;
+    }
+
+    
 }
 
 /*
