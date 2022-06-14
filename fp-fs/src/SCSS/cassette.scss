@@ -1,0 +1,48 @@
+.cassette {
+    margin: 10px 30px;
+    height: 70vh;
+    background-color: transparent;
+    position: relative;
+}
+
+.cassette img {
+    height: 68vh;
+}
+
+.cassetteNameDiv {
+    background-color: transparent;
+    position: absolute;
+    top: 13%;
+    left: 3%;
+    display: table;
+    text-align: center;
+}
+
+.cassetteName {
+    font-size: 12pt;
+    font-weight: 400;
+    color: white;
+    writing-mode: vertical-lr;
+    background-color: transparent;
+    height: 48vh;
+    width: 20vw;
+    margin: auto;
+    padding: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (min-width: 780px){
+   .cassette {
+       height: 60vh;
+   }
+
+   .cassette img {
+       height: 58vh;
+   }
+
+
+   .cassetteName {
+       height: 40vh;
+   }
+}
