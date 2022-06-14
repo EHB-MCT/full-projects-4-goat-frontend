@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import ImageCarousel, { ImageType } from "./ImageCarousel";
-import "../../scss/Imageslider.scss";
+import "../../../SCSS/Imageslider.scss";
 
 function ImageSlider() {
   const [images, setImages] = useState<ImageType[]>();
 
   useEffect(() => {
     setImages(
-      Array.from(Array(10).keys()).map((id) => ({
+      Array.from(Array(4).keys()).map((id) => ({
         id,
         url: `https://picsum.photos/1000?random=${id}`
       }))

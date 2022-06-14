@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../scss/button.scss"
 
 export type ImageType = { id: number; url: string };
 
@@ -74,18 +73,6 @@ const ImageCarousel: React.FC<{ images?: ImageType[] }> = ({ images }) => {
               />
             ))}
         </div>
-        <button
-          className="carousel__button button-56 carousel__button-left"
-          onClick={handleLeftClick}
-        >
-          Prev
-        </button>
-        <button
-          className="carousel__button button-56 carousel__button-right"
-          onClick={handleRightClick}
-        >
-          Next
-        </button>
       </div>
     </div>
   );

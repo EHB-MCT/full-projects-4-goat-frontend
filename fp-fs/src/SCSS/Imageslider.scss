@@ -1,6 +1,6 @@
 .sliderCont{
-  width: 45%;
-  margin: 3%;
+  width: 52%;
+  margin-top: 1%;
 }
 .carousel-container {
     width: 100%;
@@ -8,8 +8,8 @@
   
   .selected-image {
     width: 100%;
-    height: 400px;
-    margin-bottom: 8px;
+    height: 100px;
+    margin-bottom: 4px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,6 @@
   
   .carousel__images {
     display: flex;
-    max-width: 100%;
     overflow-x: hidden;
   }
   
@@ -30,26 +29,12 @@
   }
   
   .carousel__image {
-    z-index: -11;
     margin-right: 10px;
-    height: 75px;
-    min-width: 100px;
+    height: 25px;
+    width: 105px;
     border: 3px solid #ffa70000;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .carousel__button {
-    position: absolute;
-    top: 33%;
-  }
-  
-  .carousel__button-left {
-    left: 3px;
-  }
-  
-  .carousel__button-right {
-    right: 3px;
   }
   
