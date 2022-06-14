@@ -3,6 +3,12 @@
     height: auto;
 }
 
+.footerContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 @media (min-width: 780px){
     .footerImg{
         width: 150px;
