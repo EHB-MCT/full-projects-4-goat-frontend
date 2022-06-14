@@ -7,6 +7,8 @@ import side_4 from '../../Assets/side_4.png'
 import side_5 from '../../Assets/side_5.png'
 import side_6 from '../../Assets/side_6.png'
 
+import DetailSide from './details/detailSide'
+
 export default function Cassette(props: any){
 
     const [cassette, setCassette] = useState(String)
@@ -49,15 +51,21 @@ export default function Cassette(props: any){
 
 
     return (
-        <div className="cassette">
-            <div className='cassetteNameDiv'>
-            <h1 className='cassetteName'>{props.data.title}</h1>
+        <div className='fullCassette'>
+            <div className="cassette">
+                <div className='cassetteNameDiv'>
+                     <h1 className='cassetteName'>{props.data.title}</h1>
+                </div>
+                <img src={cassette} alt="cassete" />
+                <div className='clusterColors'>
+                    <div className={cluster}></div>
+                    <div className={cluster}></div>
+                </div>
+                        
             </div>
-             <img src={cassette} alt="cassete" />
-            <div className='clusterColors'>
-                <div className={cluster}></div>
-                <div className={cluster}></div>
-            </div>
+            <DetailSide></DetailSide>
+   
+       
         </div>
        
     )
