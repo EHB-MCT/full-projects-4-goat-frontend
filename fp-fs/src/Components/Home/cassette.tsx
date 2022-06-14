@@ -31,7 +31,7 @@ export default function Cassette(props: any){
     return (
         <div className="cassette">
             <div className='cassetteNameDiv'>
-            <h1 className='cassetteName'>{props.data.title}</h1>
+                <h1 className='cassetteName'>{props.data.title}</h1>
             </div>
              <img src={cassette} alt="cassete" />
         </div>
