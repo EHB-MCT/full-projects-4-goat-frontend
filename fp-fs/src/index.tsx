@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Results from './Components/Resultaten/Results';
 import Genomineerd from './Components/Resultaten/Genomineerd';
 import Winnaar from './Components/Resultaten/Winnaar';
+import Nav from './Components/Standard/Nav';
+import Footer from './Components/Standard/Footer';
+import Stripes from './Components/Home/Stripes';
 
 
 const root = ReactDOM.createRoot(
@@ -13,15 +16,22 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/"  element={<App/>}/>
-      <Route path="/results"  element={<Results/>}/>
-      <Route path="/results/genomineerden"  element={<Genomineerd/>}/>
-      <Route path="/results/winnaars"  element={<Winnaar/>}/>
-      <Route path="*" element={
-        <h1>Page not found</h1>
-      } />
-    </Routes>
+    <nav><Nav/></nav>
+    <div className='bodyContainer'>
+      <Stripes/>
+      <div id='indexContainer'>
+        <Routes>
+          <Route path="/"  element={<App/>}/>
+          <Route path="/results"  element={<Results/>}/>
+          <Route path="/results/genomineerden"  element={<Genomineerd/>}/>
+          <Route path="/results/winnaars"  element={<Winnaar/>}/>
+          <Route path="*" element={
+            <h1>Page not found</h1>
+          } />
+        </Routes>
+      </div>
+    </div>  
+    <footer><Footer/></footer>  
   </BrowserRouter>
 );
 

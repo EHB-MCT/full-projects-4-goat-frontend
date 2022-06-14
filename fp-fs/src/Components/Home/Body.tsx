@@ -9,8 +9,8 @@ import Stripes from "./Stripes";
 
 function Body(){
     return(
-        <div className="bodyContainer">
-            <Stripes/>
+        // <div className="bodyContainer">
+        //     <Stripes/>
             <div className="cassettesContainer">
                 <img className="cassette" src={Smart} alt="smart-technologies-cassette" />
                 <img className="cassette" src={Motion} alt="motion-cassette" />
@@ -21,7 +21,7 @@ function Body(){
                 <img className="cassette last" src={Cassette2} alt="web-app-cassette" />
             </div>
             
-        </div>
+        // </div>
     )
 }
 export default Body
