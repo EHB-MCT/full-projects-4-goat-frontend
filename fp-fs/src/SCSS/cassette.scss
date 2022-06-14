@@ -1,3 +1,5 @@
+@import 'colors';
+
 .cassette {
     margin: 10px 30px;
     height: 70vh;
@@ -32,17 +34,48 @@
     vertical-align: middle;
 }
 
-@media (min-width: 780px){
-   .cassette {
-       height: 60vh;
-   }
+.clusterColors {
+    background-color: transparent;
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 10%;
+}
 
-   .cassette img {
-       height: 58vh;
-   }
+.clusterColors div {
+    width: 100%;
+    height: 35%;
+    margin-bottom: 7px;
+}
+
+.Web {
+    background-color: $red;
+}
+
+.Motion {
+    background-color: $orange;
+}
+
+.Smart {
+    background-color: $blue;
+}
+
+.Reality {
+    background-color: $yellow;
+}
 
 
-   .cassetteName {
-       height: 40vh;
-   }
+@media (min-width: 780px) {
+    .cassette {
+        height: 60vh;
+    }
+
+    .cassette img {
+        height: 58vh;
+    }
+
+
+    .cassetteName {
+        height: 40vh;
+    }
 }
