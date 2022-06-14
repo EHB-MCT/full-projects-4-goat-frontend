@@ -2,21 +2,20 @@
 
 
 #winGenomContainer{
-    margin-top: 2.5%;
+    display: block;
+    height: 2.5%;
+    cursor: context-menu;
 }
 
 #selectionGenomOrWins {
     display: flex;
+    margin-left: 15%;
 }
 
 #selectionGenomOrWins p{
     margin-right: 2em;
     font-weight: 700;
     font-size: 16pt;
-}
-
-#mainContent {
-    position: absolute;
 }
 
 .activeSelection {
