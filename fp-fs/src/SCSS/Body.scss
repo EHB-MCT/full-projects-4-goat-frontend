@@ -14,7 +14,6 @@
 
 @media (min-width: 780px){
     .bodyContainer{
-        margin-top: 38px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -23,7 +22,7 @@
 
     .stripesSide{
         margin-top: 3.5%;
-        margin-right: 15%;
+        margin-right: 2%;
     }
 
     #blue {
@@ -63,19 +62,20 @@
     }
 
     .cassettesContainer {
-        width: 70vw;
+        width: 72%;
     }
 
     #searchForm {
         display: block;
-        width: 60vw;
-        margin-left:29.4vw;
+        width: 67%;
+        margin-left:19vw;
+        margin-top: 2vh;
     }
 
     input {
         border: none;
         border-bottom: 1px solid gray;
-        width: 35vw;
+        width: 40%;
         padding: 5px;
     }
 
@@ -92,7 +92,7 @@
 
     select {
         margin-left: 100px;
-        width: 15vw;
+        width: 20%;
         padding: 5px;
     }
 
@@ -103,35 +103,4 @@
     
 }
 
-/*
-.cassettesContainer {
-    transform: rotate(-90deg);
-    height: auto;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-
-@media (min-width: 780px){
-
-
-    
-
-    .cassettesContainer{
-        margin-right: 3%;
-        padding: 2% 0%;
-        width: 64%;
-        background-image: url(../Assets/Background-Raster.svg);
-        transform: rotate(360deg);
-    }
-
-    .cassette{
-        margin-right: 5%;
-        height: 60vh;
-    }
-
-    .last{
-        margin-right: 0%;
-    }
-} */
 
