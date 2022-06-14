@@ -12,6 +12,7 @@ import DetailSide from './details/detailSide'
 export default function Cassette(props: any){
 
     const [cassette, setCassette] = useState(String)
+    const [cassetteNumber, setCassetteNumber] = useState(Number)
     const [cluster, setCluster] = useState(String)
     const [showSide, setShowSide] = useState(Boolean)
 
@@ -23,16 +24,22 @@ export default function Cassette(props: any){
 
         if(number === 1){
             setCassette(side_1)
+            setCassetteNumber(1)
         } else if (number === 2) {
             setCassette(side_2)
+            setCassetteNumber(2)
         } else if (number === 3) {
             setCassette(side_3)
+            setCassetteNumber(3)
         }  else if (number === 4) {
             setCassette(side_4)
+            setCassetteNumber(4)
         }   else if (number === 5) {
             setCassette(side_5)
+            setCassetteNumber(5)
         }  else if (number === 6) {
             setCassette(side_6)
+            setCassetteNumber(6)
         }
 
         var numberCluster = Math.floor(Math.random() * (4 - 1 + 1)) + 1
@@ -74,7 +81,7 @@ export default function Cassette(props: any){
                 </div>
                         
             </div>
-            {showSide? <DetailSide></DetailSide>: <p></p>}
+            {showSide? <DetailSide cassette={{cassetteNumber}}></DetailSide>: <p></p>}
         </div>
        
     )
