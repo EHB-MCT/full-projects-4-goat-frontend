@@ -10,6 +10,9 @@ import Search from "../../Assets/search.png"
 
 function Body(){
     const [finalWorks, setFinalWorks] = useState([])
+    const [selectedOption, setSelectedOption] = useState<String>();
+
+    
 
     useEffect(() => {
         finalWorkService.fetchFinalWorks().then((Response) => {
@@ -17,6 +20,10 @@ function Body(){
               setFinalWorks(templateData)
           })
     }, [])
+
+    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setSelectedOption(event.target.value);
+    }
 
 
     return(
@@ -26,7 +33,7 @@ function Body(){
                     <input type="text" placeholder="Zoek op titel, student, tag..."/>
                     <img src={Search} alt="search icon" id="searchIcon"/> 
                     
-                    <select>
+                    <select onChange={handleChange}>
                         <option value="Alles">Alles</option>
                         <option value="Web en app">Web en App</option>
                         <option value="Smart Technologies">Smart Technologies</option>
