@@ -1,6 +1,5 @@
 @import "Colors";
 
-
 #winGenomContainer{
     display: block;
     height: 2.5%;
@@ -9,7 +8,7 @@
 
 #selectionGenomOrWins {
     display: flex;
-    margin-left: 15%;
+    margin-left: 7%;
     z-index: 15;
 }
 
@@ -21,4 +20,27 @@
 
 .activeSelection {
     box-shadow: 0 -2px $blue inset,0 -4px $red inset, 0 -6px $yellow inset;
+}
+
+@media (min-width:780px){
+    #index
+    #winGenomContainer{
+        display: block;
+        height: 2.5%;
+        cursor: context-menu;
+    }
+    
+    #selectionGenomOrWins {
+        margin-left: 15%;
+    }
+    
+    #selectionGenomOrWins p{
+        margin-right: 2em;
+        font-weight: 700;
+        font-size: 16pt;
+    }
+    
+    .activeSelection {
+        box-shadow: 0 -2px $blue inset,0 -4px $red inset, 0 -6px $yellow inset;
+    }
 }
