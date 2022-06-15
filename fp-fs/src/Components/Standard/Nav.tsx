@@ -1,10 +1,16 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Final-Show-Logo.svg';
 import Animation from "../../Assets/finalshow_logo_animation_2.gif"
 import '../../SCSS/Button.scss';
 import '../../SCSS/Nav.scss';
+import '../../Services/translation.js' ;
+
+
+
 
 function Nav(){
+    const {t} = useTranslation()
     return(
         <div>
             <section className="navContainer">
@@ -14,8 +20,8 @@ function Nav(){
                 </Link>
 
                 <div className='ButtonsNav'>
-                    <button className='uploadenBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
-                    <button className='stemmenBtn btn'>Uploaden</button>
+                    <button className='uploadenBtn btn'><Link to="/results" className='routingLinks'>{t('Resultaten')}</Link></button>
+                    <button className='stemmenBtn btn'>{t('Uploaden')}</button>
                     <button className='searchBtn btn'>Stemming</button>
                 </div>
             </section>
