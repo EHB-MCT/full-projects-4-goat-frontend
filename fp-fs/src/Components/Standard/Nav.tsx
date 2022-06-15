@@ -30,8 +30,9 @@ function Nav(){
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
-                    <Link to="/genomineerden" className='routingLinks'><li><button className='btn btnMobile'>Genomineerden</button></li></Link>
-                    <Link to="/winnaars" className='routingLinks'><li><button className='btn btnMobile'>Winnaars</button></li></Link>
+                    <li><button className='btn btnMobile'><Link to="/results" className='routingLinks'>Resultaten</Link></button></li>
+                    {/* <Link to="/genomineerden" className='routingLinks'><li><button className='btn btnMobile'>Genomineerden</button></li></Link>
+                    <Link to="/winnaars" className='routingLinks'><li><button className='btn btnMobile'>Winnaars</button></li></Link> */}
                     <li><button className='btn btnMobile'>Uploaden</button></li>
                     <li><button className='btn btnMobile'>Stemming</button></li>
                 </ul>
