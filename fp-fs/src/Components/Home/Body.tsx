@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import "../../SCSS/Body.scss";
 import Stripes from "./Stripes";
 import "../../SCSS/Button.scss"
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "./cassette";
 import Search from "../../Assets/search.png"
-
+import '../../Services/translation.js' ;
 
 
 function Body(){
+    const {t} = useTranslation();
     const [finalWorks, setFinalWorks] = useState([])
 
     useEffect(() => {
@@ -23,11 +25,11 @@ function Body(){
         <main>
             <div>
                 <div id="searchForm">
-                    <input type="text" placeholder="Zoek op titel, student, tag..."/>
+                    <input type="text" placeholder={t('searchformPlaceholder')}/>
                     <img src={Search} alt="search icon" id="searchIcon"/> 
                     
                     <select>
-                        <option value="Alles">Alles</option>
+                        <option value="Alles">{t('Alles')}</option>
                         <option value="Web en app">Web en App</option>
                         <option value="Smart Technologies">Smart Technologies</option>
                         <option value="Motion">Motion</option>

@@ -22,7 +22,7 @@ function Nav(){
                 <div className='ButtonsNav'>
                     <button className='uploadenBtn btn'><Link to="/results" className='routingLinks'>{t('Resultaten')}</Link></button>
                     <button className='stemmenBtn btn'>{t('Uploaden')}</button>
-                    <button className='searchBtn btn'>Stemming</button>
+                    <button className='searchBtn btn'>{t('Stemming')}</button>
                 </div>
             </section>
             <section className="top-nav">
@@ -34,10 +34,10 @@ function Nav(){
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
-                    <Link to="/genomineerden" className='routingLinks'><li><button className='btn btnMobile'>Genomineerden</button></li></Link>
-                    <Link to="/winnaars" className='routingLinks'><li><button className='btn btnMobile'>Winnaars</button></li></Link>
-                    <li><button className='btn btnMobile'>Uploaden</button></li>
-                    <li><button className='btn btnMobile'>Stemming</button></li>
+                    <Link to="/genomineerden" className='routingLinks'><li><button className='btn btnMobile'>{t('Genomineerden')}</button></li></Link>
+                    <Link to="/winnaars" className='routingLinks'><li><button className='btn btnMobile'>{t('Winnaars')}</button></li></Link>
+                    <li><button className='btn btnMobile'>{t('Uploaden')}</button></li>
+                    <li><button className='btn btnMobile'>{t('Stemming')}</button></li>
                 </ul>
             </section>
         </div>

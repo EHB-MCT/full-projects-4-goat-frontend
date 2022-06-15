@@ -1,14 +1,17 @@
 import Nav from "../Standard/Nav";
 import Footer from "../Standard/Footer";
+import { useTranslation } from 'react-i18next';
 import "../../SCSS/Home.scss"
 import "../../SCSS/ResultsNav.scss"
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Winnaar from "./Winnaar";
 import Genomineerd from "./Genomineerd";
+import '../../Services/translation.js' ;
+
 
 function Results() {
-  
+    const {t} = useTranslation()
     const [selection, setSelection] = useState(String)
     const [styleWin, setStyleWin] = useState("cont");
     const [styleGenom, setStyleGenom] = useState("cont");
@@ -37,8 +40,8 @@ function Results() {
     return(
         <main id="winGenomContainer">
             <div id="selectionGenomOrWins">
-                <p className={styleGenom} onClick={setToGenom}>Genomineerden</p>
-                <p className={styleWin} onClick={setToWin}>Winnaars</p>            
+                <p className={styleGenom} onClick={setToGenom}>{t('Genomineerden')}</p>
+                <p className={styleWin} onClick={setToWin}>{t('Winnaars')}</p>            
             </div>
             <div id="mainContent">
                 { selection === "genomineerd"? <Genomineerd/> :  <Winnaar/> }

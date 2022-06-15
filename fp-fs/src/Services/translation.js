@@ -4,36 +4,51 @@ import i18n from 'i18next';
 import {
     initReactI18next
 } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 
 
 i18n
-    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        lng: "en",
-        fallbackLng: 'en',
+        lng: navigator.language,
+        fallbackLng: 'en-US',
         resources: {
-            nl: {
+
+            'en-US': {
                 translation: {
-                    Resultaten: 'resultaten',
-                    Uploaden: 'uploaden'
+                    Resultaten: 'Results',
+                    Uploaden: 'Upload',
+                    Stemming: 'Voting',
+                    Genomineerden: 'Nominees',
+                    Winnaars: 'Winners',
+                    Alles: 'All',
+                    searchformPlaceholder: 'Search by title, student, tag...'
+                }
+            },
+
+            'nl': {
+                translation: {
+                    Resultaten: 'Resultaten',
+                    Uploaden: 'Uploaden',
+                    Stemming: 'Stemming',
+                    Genomineerden: 'Genomineerden',
+                    Winnaars: 'Winnaars',
+                    Alles: 'Alles',
+                    searchformPlaceholder: 'Zoek op titel, student, tag...'
 
                 }
             },
-            en: {
-                translation: {
-                    Resultaten: 'results',
-                    Uploaden: 'upload'
-                }
-            },
 
 
-            fr: {
+            'fr': {
                 translation: {
-                    Resultaten: 'résultats',
-                    Uploaden: 'télécharger'
+                    Resultaten: 'Résultats',
+                    Uploaden: 'Télécharger',
+                    Stemming: 'Voter',
+                    Genomineerden: 'Nominés',
+                    Winnaars: 'Gagnants',
+                    Alles: 'Tout',
+                    searchformPlaceholder: 'Recherche par titre, étudiant, tag...'
                 }
             }
         }
