@@ -1,19 +1,265 @@
-div {
+@import 'Colors';
+
+h3, h1, h5, p, span, div, img{
     background-color: transparent;
-    position: relative;
-    text-align: center;
+} 
+
+.fullCassetteWeb{
+    display: none;
 }
 
-.cover {
-    height: 58vh;
-    margin-top: 10px;
-    background-color: transparent;
+.fullCassetteMob{
+    display: flex;
 }
 
-.onCoverElement{
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.detailPageContainer{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.clusterNameMob{
+    margin: 0% 0% 5% 0%;
+    font-size: 15pt;
+    width: 50vw;
+    height: 4vh;
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectArtistMob{
+    padding-left: 5%;
+    font-size: 25pt;
+    margin: -1% 0% 0% 0%;
+    font-weight: 900;
+    display: flex;
+    align-items: flex-start;
+}
+
+#projectNameMob{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.projectPlaceHolderMob, .beschrijvingPlaceholderMob{
+    font-weight: 700;
+    font-size: 10pt;
+    margin: 0% 2% 0% 0%;
+}
+.nameProjectMob{
+    font-size: 10pt;
+    margin: 0% 5% 0% 0%;
+    font-weight: 400;
+}
+
+.beschrijvingPlaceholderMob{
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 15pt;
+}
+
+.beschrijvingMob{
+    padding-left: 5%;
+    font-size: 12pt;
+    font-weight: 400;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0%;
+    text-align: left;
+}
+
+#personalInfoMob{
+    padding-left: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#stripeContactMob{
+    width: 2px;
+    height: 120px;
+    background: white;
+    margin-right: 5%;
+}
+
+#imgContactMob{
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%
+}
+
+.infoFlexMob{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    font-size: 400;
+    font-size: 12pt;
+}
+
+.placeTextMob{
+    margin: 0% 2% 3% 5%;
+}
+
+.invulTextMob {
+    margin: 0%;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+#shareIconMob{
+    color: white;
+    width: 12%;
+}
+
+#shareContainerMob{
+    margin-top: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (min-width: 780px){
+    .fullCassetteMob{
+        display: none;
+    }
+
+    .fullCassetteWeb{
+        display: flex;
+    }
+
+    .detailContainer {
+        position: relative;
+        text-align: center;
+    }
+    
+    .cover {
+        height: 58vh;
+        margin-top: 10px;
+        background-color: transparent;
+    }
+    
+    .onCoverElement{
+        background-color: transparent;
+        position: absolute;
+        color: white;
+        top: 10px;
+        left: 8px;
+    }
+
+    .clusterName{
+        margin: 0% 0% 2% 0%;
+        font-size: 9pt;
+        width: 8vw;
+        height: 2vh;
+        background-color: $orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #projectArtist{
+        font-size: 19pt;
+        margin: -1% 0% 0% 0%;
+        font-weight: 900;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    #projectName{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .projectPlaceHolder, .beschrijvingPlaceholder{
+        font-weight: 700;
+        font-size: 8pt;
+        margin: 0% 2% 0% 0%;
+    }
+    .nameProject{
+        font-size: 8pt;
+        margin: 0% 5% 0% 0%;
+        font-weight: 400;
+    }
+    
+    .beschrijvingPlaceholder{
+        display: flex;
+        align-items: flex-start;
+        margin-top: 2%;
+        margin-bottom: 0%;
+        font-size: 10pt;
+    }
+    
+    .beschrijving{
+        font-size: 8pt;
+        font-weight: 400;
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+        margin: 0%;
+        text-align: left;
+    }
+    
+    #personalInfo{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    #stripeContact{
+        width: 2px;
+        height: 120px;
+        background: white;
+    }
+    
+    #imgContact{
+        // margin-left: 1%;
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%
+    }
+    
+    .infoFlex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 400;
+        font-size: 10pt;
+    }
+    
+    .placeText{
+        margin: 0% 2% 1% 5%;
+    }
+    
+    .invulText {
+        margin: 0%;
+        font-weight: 300;
+        font-size: 9pt;
+    }
+    
+    #shareIcon{
+        color: white;
+        width: 7%;
+        bottom: 8px;
+    }
+    
+    #shareContainer{
+        margin: 5% 2% 0% 0%;
+    }
 }

@@ -9,6 +9,7 @@ import Winnaar from './Components/Resultaten/Winnaar';
 import Nav from './Components/Standard/Nav';
 import Footer from './Components/Standard/Footer';
 import Stripes from './Components/Home/Stripes';
+import DetailMob from './Components/Home/details/DetailMob';
 
 
 const root = ReactDOM.createRoot(
@@ -23,6 +24,7 @@ root.render(
         <Routes>
           <Route path="/"  element={<App/>}/>
           <Route path="/results"  element={<Results/>}/>
+          <Route path="/detail" element={<DetailMob/>}/>
           <Route path="/genomineerden"  element={<Genomineerd/>}/>
           <Route path="/winnaars"  element={<Winnaar/>}/>
           <Route path="*" element={

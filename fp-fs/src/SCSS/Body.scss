@@ -12,15 +12,7 @@
     display: none;
 }
 
-.bodyContainer{
-    display: none;
-}
-
 @media (min-width: 780px){
-
-    .bodyContainer{
-        display: flex;
-    }
 
     .cassettesContainer {
         margin-left: 15%;
