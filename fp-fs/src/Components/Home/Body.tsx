@@ -10,7 +10,7 @@ import Search from "../../Assets/search.png"
 
 function Body(){
     const [finalWorks, setFinalWorks] = useState([])
-    const [selectedOption, setSelectedOption] = useState<String>();
+    const [selectedWorks, setSelectedWorks] = useState([]);
 
     
 
@@ -18,11 +18,30 @@ function Body(){
         finalWorkService.fetchFinalWorks().then((Response) => {
             var templateData =  Response.slice(0, 40);
               setFinalWorks(templateData)
+              setSelectedWorks(templateData)
           })
     }, [])
 
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedOption(event.target.value);
+        /* val filteredResults = finalWorks.filter {it.cluster == event.target.value}
+            setSelectedWorks(filteredResults) */
+
+        if (event.target.value === "Alles"){
+            var filteredResults = finalWorks.slice(0,40)
+            setSelectedWorks(filteredResults)
+        }else if(event.target.value === "Web en app"){
+            var filteredResults = finalWorks.slice(0,10)
+            setSelectedWorks(filteredResults)
+        }else if(event.target.value === "Smart Technologies"){
+            var filteredResults = finalWorks.slice(10,20)
+            setSelectedWorks(filteredResults)
+        }else if(event.target.value === "Motion"){
+            var filteredResults = finalWorks.slice(20,30)
+            setSelectedWorks(filteredResults)
+        }else if(event.target.value === "Extended Reality"){
+            var filteredResults = finalWorks.slice(30,40)
+            setSelectedWorks(filteredResults)
+        }
     }
 
 
@@ -48,7 +67,7 @@ function Body(){
                 </div>
                 <div className="cassettesContainer">
                     {
-                    finalWorks.map(x => {
+                    selectedWorks.map(x => {
                         return <Cassette data={x} key={x["id"]} ></Cassette>
                     })}  
 
