@@ -22,7 +22,7 @@ function Body(){
           })
     }, [])
 
-    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const handleChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
         /* val filteredResults = finalWorks.filter {it.cluster == event.target.value}
             setSelectedWorks(filteredResults) */
 
@@ -44,15 +44,19 @@ function Body(){
         }
     }
 
+    const handleChangeInput = () => {
+            
+    }
+
 
     return(
         <main>
             <div>
                 <div id="searchForm">
-                    <input type="text" placeholder="Zoek op titel, student, tag..."/>
+                    <input onChange={handleChangeInput} type="text" placeholder="Zoek op titel, student, tag..." />
                     <img src={Search} alt="search icon" id="searchIcon"/> 
                     
-                    <select onChange={handleChange}>
+                    <select onChange={handleChangeSelect}>
                         <option value="Alles">Alles</option>
                         <option value="Web en app">Web en App</option>
                         <option value="Smart Technologies">Smart Technologies</option>
