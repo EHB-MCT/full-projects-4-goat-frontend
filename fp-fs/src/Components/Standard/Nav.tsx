@@ -20,9 +20,11 @@ function Nav(){
                 </div>
             </section>
             <section className="top-nav">
-                <div className='logoFinal' >
-                    <img src={Logo} alt="logo-final-show" />
-                </div>
+                <Link to="/" className='routingLinks'>
+                    <div className='logoFinal' >
+                        <img src={Logo} alt="logo-final-show" />
+                    </div>
+                </Link>
                 <input id="menu-toggle" type="checkbox" />
                 <label className='menu-button-container' htmlFor="menu-toggle">
                     <div className='menu-button'></div>
