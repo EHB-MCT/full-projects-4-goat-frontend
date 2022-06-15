@@ -93,12 +93,13 @@
 .menu {
   position: absolute;
   top: 60px;
-  margin-top: 22px;
+  margin-top: 20px;
   left: 0;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 #menu-toggle ~ .menu li {
   height: 0;
