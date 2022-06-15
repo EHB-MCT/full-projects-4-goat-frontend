@@ -12,6 +12,7 @@ function Body(){
     const [selectedWorks, setSelectedWorks] = useState([]);
     const [cluster, setCluster] = useState([])
     const [input, setInput] = useState(String)
+    const [displayFilter, setDisplayFilter] = useState(String)
     
 
     useEffect(() => {
@@ -19,6 +20,7 @@ function Body(){
             var templateData =  Response.slice(0, 40);
               setFinalWorks(templateData)
               setSelectedWorks(templateData)
+              setDisplayFilter("none")
           })
 
       
@@ -101,6 +103,14 @@ function Body(){
             } 
     }
 
+    const showForm = () => {
+        if(displayFilter === "none"){
+            setDisplayFilter("block")
+        } else {
+            setDisplayFilter("none")
+        }
+    }
+
  
 
 
@@ -122,8 +132,22 @@ function Body(){
             </div>
             <div className="bodyContainer">
                 <div id="filterButton">
-                    <button className="btn filterButtonPhone">Filter</button>
+                    <button className="btn filterButtonPhone"  onClick={showForm}>Filter</button>
+
+                    <div id="searchFormMobile" style={{'display': displayFilter}}>
+                        <input onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
+                        <img src={Search} alt="search icon" id="searchIcon"/> 
+                        
+                        <select onChange={handleChangeSelect}>
+                            <option value="Alles">Alles</option>
+                            <option value="Web en app">Web en App</option>
+                            <option value="Smart Technologies">Smart Technologies</option>
+                            <option value="Motion">Motion</option>
+                            <option value="Extended Reality">Extended Reality</option>
+                        </select>
                 </div>
+                </div>
+               
                 <div className="cassettesContainer">
                     {
                     selectedWorks.map(x => {
