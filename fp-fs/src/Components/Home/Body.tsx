@@ -10,6 +10,8 @@ import Search from "../../Assets/search.png"
 function Body(){
     const [finalWorks, setFinalWorks] = useState([])
     const [selectedWorks, setSelectedWorks] = useState([]);
+    const [cluster, setCluster] = useState([])
+    const [input, setInput] = useState(String)
     
 
     useEffect(() => {
@@ -26,34 +28,77 @@ function Body(){
         /* val filteredResults = finalWorks.filter {it.cluster == event.target.value}
             setSelectedWorks(filteredResults) */
 
-        if (event.target.value === "Alles"){
-            var filteredResults = finalWorks.slice(0,40)
-            setSelectedWorks(filteredResults)
-        }else if(event.target.value === "Web en app"){
-            var filteredResults = finalWorks.slice(0,10)
-            setSelectedWorks(filteredResults)
-        }else if(event.target.value === "Smart Technologies"){
-            var filteredResults = finalWorks.slice(10,20)
-            setSelectedWorks(filteredResults)
-        }else if(event.target.value === "Motion"){
-            var filteredResults = finalWorks.slice(20,30)
-            setSelectedWorks(filteredResults)
-        }else if(event.target.value === "Extended Reality"){
-            var filteredResults = finalWorks.slice(30,40)
-            setSelectedWorks(filteredResults)
-        }
+            if(selectedWorks.length === finalWorks.length){
+                if (event.target.value === "Alles"){
+                    var filteredResults = finalWorks.slice(0,40)
+                    setCluster(filteredResults)
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Web en app"){
+                    var filteredResults = finalWorks.slice(0,10)
+                    setCluster(filteredResults)
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Smart Technologies"){
+                    var filteredResults = finalWorks.slice(10,20)
+                    setCluster(filteredResults)
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Motion"){
+                    var filteredResults = finalWorks.slice(20,30)
+                    setCluster(filteredResults)
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Extended Reality"){
+                    var filteredResults = finalWorks.slice(30,40)
+                    setCluster(filteredResults)
+                    setSelectedWorks(filteredResults)
+                }
+            } else {
+                if (event.target.value === "Alles"){
+                    var filteredResults = finalWorks.slice(0,40)
+                    setCluster(filteredResults)
+                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Web en app"){
+                    var filteredResults = finalWorks.slice(0,10)
+                    setCluster(filteredResults)
+                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Smart Technologies"){
+                    var filteredResults = finalWorks.slice(10,20)
+                    setCluster(filteredResults)
+                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Motion"){
+                    var filteredResults = finalWorks.slice(20,30)
+                    setCluster(filteredResults)
+                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                }else if(event.target.value === "Extended Reality"){
+                    var filteredResults = finalWorks.slice(30,40)
+                    setCluster(filteredResults)
+                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                }
+            }
+
+
+          
+       
     }
 
-    const getInput = (input: any) => {
-            if(input === ""){
-                setSelectedWorks(finalWorks)
+    const getInput = (inputForm: any) => {
+        setInput(inputForm)
+            if(inputForm === ""){
+                setSelectedWorks(cluster)
             }else {
-               var filteredResults = selectedWorks.filter((x:any) => x.title.toLowerCase().includes(input))
-              setSelectedWorks(filteredResults)
-            } 
-            
+                if(selectedWorks.length === finalWorks.length){
+                    var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                } else {
+                    var filteredResults = selectedWorks.filter((x:any) => x.title.toLowerCase().includes(input))
+                    setSelectedWorks(filteredResults)
+                }
 
-        
+            
+            } 
     }
 
  
