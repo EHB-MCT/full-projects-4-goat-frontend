@@ -1,6 +1,8 @@
 import share from '../../../Assets/share_logo.png'
+import cross from '../../../Assets/cross_logo.png'
 import '../../../SCSS/DetailSide.scss'
 import ImageSlider from './ImageSlider'
+import { Link } from 'react-router-dom'
 
 
 export default function DetailMob(props: any) {
@@ -9,6 +11,7 @@ export default function DetailMob(props: any) {
         <div className='detailPageContainer'>
             <div id="stripeClusterMob">
                 <h3 className='clusterNameMob'>Motion</h3>
+                <Link to="/results" className='routingLinks'><img src={cross} alt="closing-img" id="cross"/></Link>
             </div>
 
             <h1 id="projectArtistMob">Boutaârourte Yousra</h1>

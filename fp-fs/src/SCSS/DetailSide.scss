@@ -18,6 +18,17 @@ h3, h1, h5, p, span, div, img{
     height: 100vh;
 }
 
+#stripeClusterMob{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cross{
+    height: 5vh;
+}
+
 .clusterNameMob{
     margin: 0% 0% 5% 0%;
     font-size: 15pt;
