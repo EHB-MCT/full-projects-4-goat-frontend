@@ -38,6 +38,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Álvaro <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codepen.io <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codepen.io/alvarotrigo/pen/MWEJEWG
+11. Get value of select
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: A Goodman <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: kindacode.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://www.kindacode.com/article/react-typescript-handling-select-onchange-event/ 
 
 Details and config of the used server
 --------------------------
