@@ -10,8 +10,6 @@ import Search from "../../Assets/search.png"
 function Body(){
     const [finalWorks, setFinalWorks] = useState([])
     const [selectedWorks, setSelectedWorks] = useState([]);
-    const [inputSearch, setInputSearch] = useState(String);
-
     
 
     useEffect(() => {
@@ -47,19 +45,18 @@ function Body(){
     }
 
     const getInput = (input: any) => {
-            setInputSearch(input)
-
             if(input === ""){
                 setSelectedWorks(finalWorks)
-            }
+            }else {
+               var filteredResults = selectedWorks.filter((x:any) => x.title.toLowerCase().includes(input))
+              setSelectedWorks(filteredResults)
+            } 
+            
+
+        
     }
 
-    const handleChangeInput = (e: any) => {
-        e.preventDefault()
-
-        console.log(inputSearch)
-        setSelectedWorks([])
-    }
+ 
 
 
     return(
@@ -67,7 +64,7 @@ function Body(){
             <div>
                 <div id="searchForm">
                     <input onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
-                    <img onClick={handleChangeInput} src={Search} alt="search icon" id="searchIcon"/> 
+                    <img src={Search} alt="search icon" id="searchIcon"/> 
                     
                     <select onChange={handleChangeSelect}>
                         <option value="Alles">Alles</option>
@@ -85,7 +82,7 @@ function Body(){
                 <div className="cassettesContainer">
                     {
                     selectedWorks.map(x => {
-                        return <Cassette data={x} key={x["id"]} ></Cassette>
+                        return <Cassette data={x} key={x["id"]}></Cassette>
                     })}  
 
                     
