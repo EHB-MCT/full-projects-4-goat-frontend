@@ -15,8 +15,6 @@ export default function DetailSide(props: any) {
     const [cover, setCover] = useState(String)
 
     useEffect(() => {
-
-        console.log(props.cassette.cassetteNumber)
     
         if (props.cassette.cassetteNumber === 1){
             setCover(cover_1)
