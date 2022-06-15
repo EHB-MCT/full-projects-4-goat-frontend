@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "../../SCSS/Body.scss";
-import Stripes from "./Stripes";
 import "../../SCSS/Button.scss"
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "./cassette";
@@ -11,6 +10,7 @@ import Search from "../../Assets/search.png"
 function Body(){
     const [finalWorks, setFinalWorks] = useState([])
     const [selectedWorks, setSelectedWorks] = useState([]);
+    const [inputSearch, setInputSearch] = useState(String);
 
     
 
@@ -20,6 +20,8 @@ function Body(){
               setFinalWorks(templateData)
               setSelectedWorks(templateData)
           })
+
+      
     }, [])
 
     const handleChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -44,8 +46,19 @@ function Body(){
         }
     }
 
-    const handleChangeInput = () => {
-            
+    const getInput = (input: any) => {
+            setInputSearch(input)
+
+            if(input === ""){
+                setSelectedWorks(finalWorks)
+            }
+    }
+
+    const handleChangeInput = (e: any) => {
+        e.preventDefault()
+
+        console.log(inputSearch)
+        setSelectedWorks([])
     }
 
 
@@ -53,8 +66,8 @@ function Body(){
         <main>
             <div>
                 <div id="searchForm">
-                    <input onChange={handleChangeInput} type="text" placeholder="Zoek op titel, student, tag..." />
-                    <img src={Search} alt="search icon" id="searchIcon"/> 
+                    <input onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
+                    <img onClick={handleChangeInput} src={Search} alt="search icon" id="searchIcon"/> 
                     
                     <select onChange={handleChangeSelect}>
                         <option value="Alles">Alles</option>
