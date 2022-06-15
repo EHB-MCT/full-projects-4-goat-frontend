@@ -35,9 +35,9 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codepen.io <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codepen.io/maxym11/pen/vYLKNYO
 10. Hamburger menu <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Álvaro <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codepen.io <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codepen.io/alvarotrigo/pen/MWEJEWG
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: DevJazz & MertHaddad <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: stackoverflow.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://stackoverflow.com/questions/70310465/how-can-i-close-my-hamburger-menu-when-clicking-on-a-link-using-react-js-using
 
 Details and config of the used server
 --------------------------
