@@ -30,10 +30,10 @@ function Body(){
                     
                     <select>
                         <option value="Alles">{t('Alles')}</option>
-                        <option value="Web en app">Web en App</option>
-                        <option value="Smart Technologies">Smart Technologies</option>
-                        <option value="Motion">Motion</option>
-                        <option value="Extended Reality">Extended Reality</option>
+                        <option value="Web en app">{t('WebEnApp')}</option>
+                        <option value="Smart Technologies">{t('SmartTechnologies')}</option>
+                        <option value="Motion">{t('Motion')}</option>
+                        <option value="Extended Reality">{t('ExtendedReality')}</option>
                     </select>
                 </div>
             </div>
