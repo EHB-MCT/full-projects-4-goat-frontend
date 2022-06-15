@@ -26,6 +26,7 @@ export default function DetailMob(props: any) {
             </p>
 
             <div id="personalInfo">
+                <div id="stripeContact"></div>
                 <div id="imgContact"></div>
                 <div id="contactInfoContainer">
                     <div className='infoFlex'>
