@@ -1,24 +1,142 @@
 @import 'Colors';
 
-#showSideWeb{
-    display: none;
-}
-
-#showSideMob{
-    display: flex;
-}
-
 h3, h1, h5, p, span, div, img{
     background-color: transparent;
 } 
 
+.fullCassetteWeb{
+    display: none;
+}
+
+.fullCassetteMob{
+    display: flex;
+}
+
+.detailPageContainer{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.clusterName{
+    margin: 0% 0% 5% 0%;
+    font-size: 15pt;
+    width: 50vw;
+    height: 4vh;
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projectArtist{
+    padding-left: 5%;
+    font-size: 25pt;
+    margin: -1% 0% 0% 0%;
+    font-weight: 900;
+    display: flex;
+    align-items: flex-start;
+}
+
+#projectName{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+
+.projectPlaceHolder, .beschrijvingPlaceholder{
+    font-weight: 700;
+    font-size: 10pt;
+    margin: 0% 2% 0% 0%;
+}
+.nameProject{
+    font-size: 10pt;
+    margin: 0% 5% 0% 0%;
+    font-weight: 400;
+}
+
+.beschrijvingPlaceholder{
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 15pt;
+}
+
+.beschrijving{
+    padding-left: 5%;
+    font-size: 12pt;
+    font-weight: 400;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0%;
+    text-align: left;
+}
+
+#personalInfo{
+    padding-left: 5%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#stripeContact{
+    width: 2px;
+    height: 120px;
+    background: white;
+    margin-right: 5%;
+}
+
+#imgContact{
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%
+}
+
+.infoFlex{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    font-size: 400;
+    font-size: 12pt;
+}
+
+.placeText{
+    margin: 0% 2% 3% 5%;
+}
+
+.invulText {
+    margin: 0%;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+#shareIcon{
+    color: white;
+    width: 12%;
+}
+
+#shareContainer{
+    margin-top: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 @media (min-width: 780px){
-    #showSideMob{
+    .fullCassetteMob{
         display: none;
     }
 
-    #showSideWeb{
+    .fullCassetteWeb{
         display: flex;
     }
 
@@ -40,7 +158,7 @@ h3, h1, h5, p, span, div, img{
         top: 10px;
         left: 8px;
     }
-    
+
     .clusterName{
         margin: 0% 0% 2% 0%;
         font-size: 9pt;
