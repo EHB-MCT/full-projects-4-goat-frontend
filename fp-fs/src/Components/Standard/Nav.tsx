@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Final-Show-Logo.svg';
 import Animation from "../../Assets/finalshow_logo_animation_2.gif"
@@ -5,6 +6,14 @@ import '../../SCSS/Button.scss';
 import '../../SCSS/Nav.scss';
 
 function Nav(){
+    const [open , setOpen] = useState(true)
+
+    useEffect(() => {
+        if (!open){
+            (document.getElementById("close-button") as HTMLLabelElement).click()
+        }
+    },[open]);
+
     return(
         <div>
             <section className="navContainer">
@@ -19,24 +28,54 @@ function Nav(){
                     <button className='searchBtn btn'>Stemming</button>
                 </div>
             </section>
-            <section className="top-nav">
+            <div className="navbar-container">
+                <div className="container">
+                    <input type="checkbox" id="nav" className="hidden" />
+                    <label onClick={()=> setOpen(true)} id="close-button" htmlFor="nav" className="nav-btn">
+                        <i></i>
+                        <i></i>
+                    </label>
+                    <div className="logo">
+                    <Link to="/" className='routingLinks'>
+                        <div className='logoFinal'>
+                            <img src={Logo} alt="logo-final-show" />
+                        </div>
+                    </Link>
+                    </div>
+                    <div className="nav-wrapper">
+                        <ul>
+                            <li className="nav-item">
+                                <button className='btn btnMobile'><Link to="/" className='routingLinks' onClick={()=> setOpen(false)}>Home</Link></button>
+                            </li>
+                            <li className="nav-item">
+                                <button className='btn btnMobile'><Link to="/results" className='routingLinks' onClick={()=> setOpen(false)}>Results</Link></button>
+                            </li>
+                            <li className="nav-item">
+                                <button className='btn btnMobile'>Uploaden</button>
+                            </li>
+                            <li className="nav-item">
+                                <button className='btn btnMobile'>Stemming</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {/* <section className="top-nav">
                 <Link to="/" className='routingLinks'>
                     <div className='logoFinal' >
                         <img src={Logo} alt="logo-final-show" />
                     </div>
                 </Link>
                 <input id="menu-toggle" type="checkbox" />
-                <label className='menu-button-container' htmlFor="menu-toggle">
+                <label onClick={()=> setOpen(true)} className='menu-button-container' htmlFor="menu-toggle">
                     <div className='menu-button'></div>
                 </label>
                 <ul className="menu">
-                    <li><button className='btn btnMobile'><Link to="/results" className='routingLinks'>Resultaten</Link></button></li>
-                    {/* <Link to="/genomineerden" className='routingLinks'><li><button className='btn btnMobile'>Genomineerden</button></li></Link>
-                    <Link to="/winnaars" className='routingLinks'><li><button className='btn btnMobile'>Winnaars</button></li></Link> */}
+                    <li><button className='btn btnMobile'><Link to="/results" className='routingLinks' onClick={()=> setOpen(false)}>Resultaten</Link></button></li>
                     <li><button className='btn btnMobile'>Uploaden</button></li>
                     <li><button className='btn btnMobile'>Stemming</button></li>
                 </ul>
-            </section>
+            </section> */}
         </div>
     )
 }
