@@ -15,9 +15,15 @@ function ImageSlider() {
   }, []);
 
   return (
-    <div className="sliderCont">
-      <ImageCarousel images={images} />
+    <div>
+      <div className="sliderContMob">
+        <ImageCarousel images={images} />
+      </div>
+      <div className="sliderCont">
+        <ImageCarousel images={images} />
+      </div>
     </div>
+    
   );
 }
 
