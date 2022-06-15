@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import '../../SCSS/cassette.scss'
+import '../../SCSS/DetailSide.scss'
 import side_1 from '../../Assets/side_1.png'
 import side_2 from '../../Assets/side_2.png'
 import side_3 from '../../Assets/side_3.png'
@@ -8,6 +9,8 @@ import side_5 from '../../Assets/side_5.png'
 import side_6 from '../../Assets/side_6.png'
 
 import DetailSide from './details/detailSide'
+import DetailMob from './details/DetailMob'
+import { Link } from 'react-router-dom'
 
 export default function Cassette(props: any){
 
@@ -69,21 +72,35 @@ export default function Cassette(props: any){
 
 
     return (
-
-        <div className='fullCassette'>
-            <div className="cassette" onClick={changeShowSide}>
-                <div className='cassetteNameDiv'>
-                     <h1 className='cassetteName'>{props.data.title}</h1>
+        <div>
+            <Link to="/detail">
+            <div className='fullCassetteMob'>
+                <div className="cassette">
+                    <div className='cassetteNameDiv'>
+                        <h1 className='cassetteName'>{props.data.title}</h1>
+                    </div>
+                    <img src={cassette} alt="cassette" />
+                    <div className='clusterColors'>
+                        <div className={cluster}></div>
+                        <div className={cluster}></div>
+                    </div>
                 </div>
-                <img src={cassette} alt="cassette" />
-                <div className='clusterColors'>
-                    <div className={cluster}></div>
-                    <div className={cluster}></div>
-                </div>
-                        
             </div>
-            {showSide? <DetailSide cassette={{cassetteNumber}}></DetailSide>: <p></p>}
-        </div>
-       
+            </Link> 
+
+            <div className='fullCassetteWeb'>
+                <div className="cassette" onClick={changeShowSide}>
+                    <div className='cassetteNameDiv'>
+                        <h1 className='cassetteName'>{props.data.title}</h1>
+                    </div>
+                    <img src={cassette} alt="cassette" />
+                    <div className='clusterColors'>
+                        <div className={cluster}></div>
+                        <div className={cluster}></div>
+                    </div>
+                </div>
+                {showSide? <DetailSide cassette={{cassetteNumber}}></DetailSide>: <p></p>}
+            </div>
+        </div>       
     )
 }
