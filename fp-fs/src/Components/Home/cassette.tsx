@@ -69,14 +69,14 @@ export default function Cassette(props: any){
 
 
     return (
-        <div>
+        <div className='cassetteComplete'>
             <Link to="/detail">
             <div className='fullCassetteMob'>
                 <div className="cassette">
                     <div className='cassetteNameDiv'>
                         <h1 className='cassetteName'>{props.data.title}</h1>
                     </div>
-                    <img src={cassette} alt="cassette" />
+                    <img src={cassette} alt="cassette" className='imgCassette'/>
                     <div className='clusterColors'>
                         <div className={cluster}></div>
                         <div className={cluster}></div>
@@ -90,7 +90,7 @@ export default function Cassette(props: any){
                     <div className='cassetteNameDiv'>
                         <h1 className='cassetteName'>{props.data.title}</h1>
                     </div>
-                    <img src={cassette} alt="cassette" />
+                    <img src={cassette} alt="cassette" className='imgCassette'/>
                     <div className='clusterColors'>
                         <div className={cluster}></div>
                         <div className={cluster}></div>
