@@ -21,6 +21,7 @@ function Body(){
               setFinalWorks(templateData)
               setSelectedWorks(templateData)
               setDisplayFilter("none")
+              setCluster(templateData)
           })
 
       
@@ -95,7 +96,7 @@ function Body(){
                     var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
                 } else {
-                    var filteredResults = selectedWorks.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = cluster.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
                 }
 
