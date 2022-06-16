@@ -23,9 +23,9 @@ function Nav(){
                 </Link>
 
                 <div className='ButtonsNav'>
-                    <button className='resultBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
                     <button className='uploadenBtn btn'>Uploaden</button>
                     <button className='stemmenBtn btn'>Stemming</button>
+                    <button className='resultBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
                     <button className='searchBtn btn'><a href="https://finalshow.be/" target="_blank" className='routingLinks'>Platform</a></button>
                 </div>
             </section>
