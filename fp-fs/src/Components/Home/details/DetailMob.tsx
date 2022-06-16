@@ -3,6 +3,10 @@ import cross from '../../../Assets/cross_logo.png'
 import '../../../SCSS/DetailSide.scss'
 import ImageSlider from './ImageSlider'
 import { Link } from 'react-router-dom'
+import phone from '../../../Assets/phone.png'
+import mail from '../../../Assets/email.png'
+import linkedin from '../../../Assets/linkedin.png'
+import instagram from '../../../Assets/instagram.png'
 
 
 export default function DetailMob(props: any) {
@@ -29,23 +33,21 @@ export default function DetailMob(props: any) {
             </p>
 
             <div id="personalInfoMob">
-                <div id="stripeContactMob"></div>
-                <div id="imgContactMob"></div>
                 <div id="contactInfoContainerMob">
                     <div className='infoFlexMob'>
-                        <p className='placeTextMob'>Tel:</p>
+                        <img src={phone} alt="phone icon" className='socialIcon'/>
                         <p className='invulTextMob' >0123456789</p>
                     </div>
                     <div id="maiMobl" className='infoFlexMob'>
-                        <p className='mailPlaceholderMob placeTextMob'>Mail:</p>
+                    <img src={mail} alt="mail icon" className='socialIcon'/>
                         <p className='mailAdresMob invulTextMob'>yousra.boutaârourte@gmail.com</p>
                     </div>
                     <div id="linkedInMob" className='infoFlexMob'>
-                        <p className='placeTextMob'>LinkedIn:</p>
+                    <img src={linkedin} alt="linkedin icon" className='socialIcon'/>
                         <p className='invulTextMob'>Boutaârourte Yousra</p>
                     </div>
                     <div id="InstagramMob" className='infoFlexMob'>
-                        <p className='placeTextMob'>Instagram:</p>
+                    <img src={instagram} alt="instagram icon" className='socialIcon'/>
                         <p className='invulTextMob'>@Boutaârourte_Yousra</p>
                     </div>
                 </div>
