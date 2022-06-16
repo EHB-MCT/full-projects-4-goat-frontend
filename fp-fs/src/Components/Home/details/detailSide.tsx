@@ -57,9 +57,6 @@ export default function DetailSide(props: any) {
             </p>
 
             <div id="personalInfo">
-                {/* <div id="stripeContact"></div> */}
-                <div id="imgContact"></div>
-                {/* <img src="../../../Assets/search.png" alt="profile-pick"/> */}
                 <div id="contactInfoContainer">
                     <div className='infoFlex'>
                         <img src={phone} alt="phone icon" className='socialIcon'/>
@@ -78,10 +75,12 @@ export default function DetailSide(props: any) {
                         <p className='invulText'>@Boutaârourte_Yousra</p>
                     </div>
                 </div>
+
             </div>
             <div id="shareContainer">
                 <img src={share} alt="share-icon" id="shareIcon"/>
             </div>
+
         </div> 
     </div>
     )
