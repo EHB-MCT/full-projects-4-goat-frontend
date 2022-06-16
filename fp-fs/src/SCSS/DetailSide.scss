@@ -18,6 +18,11 @@ h3, h1, h5, p, span, div, img{
     height: 100vh;
 }
 
+.detailContainer{
+    margin-left: -17px;
+}
+
+
 #stripeClusterMob{
     display: flex;
     flex-direction: row;
@@ -166,6 +171,8 @@ h3, h1, h5, p, span, div, img{
     .detailContainer {
         position: relative;
         text-align: center;
+    animation: cassettOpenAnimation 5S linear;
+
     }
     
     .cover {

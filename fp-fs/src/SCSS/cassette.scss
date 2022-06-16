@@ -7,6 +7,17 @@
     position: relative;
 }
 
+
+.cassetteOpenAnimation {
+    transform: rotate3d(-.02, -1, 0, 60deg);
+
+}
+
+.cassetteCloseAnimation{
+    transform: rotate3d(0);
+
+}
+
 .cassette img {
     height: 68vh;
 }
@@ -81,7 +92,7 @@
         height: 40vh;
     }
 
-    .cassette:hover {
+    .fullCassetteWeb:hover {
         transform: scale(0.95);
     }
 
