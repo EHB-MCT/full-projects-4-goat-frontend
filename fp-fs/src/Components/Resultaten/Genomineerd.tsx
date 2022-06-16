@@ -13,7 +13,7 @@ import Smart from "../../Assets/Logos-Clusters/SMARTTECHNOLOGY_Logo.svg"
 
 function Genomineerd(){
     const [finalWorks, setFinalWorks] = useState([])
-    const [date, setDate] = useState(String)
+    var [date, setDate] = useState(String)
 
     useEffect(() => {
         finalWorkService.fetchFinalWorks().then((Response) => {
@@ -21,58 +21,68 @@ function Genomineerd(){
               setFinalWorks(templateData)
           })
 
-          setDate(Date.now().toString())
-          console.log(Date.now())
+        /*  setDate("1655485200") */
+         setDate(Date.now().toString())
+         console.log(Date.now())
     }, [])
 
 
     return(
         <div className="allClusters">
+            {date === "1655485200"? 
+            <div>
+                        <div className="motionGenom">
+                    <div className="motionImg">
+                        <img className="logoImgcluster" src={Motion} alt="name-cluster-logo" />
+                    </div>
+                    <div className="cassettesContainer">
+                        {
+                        finalWorks.map(x => {
+                            return <Cassette data={x} key={x["id"]} ></Cassette>
+                        })}
+                    </div>     
+                </div>       
+                <div className="webAppGenom">
+                    <div className="appImg">
+                        <img className="logoImgcluster" src={WebApp} alt="name-cluster-logo" />
+                    </div>
+                    <div className="cassettesContainer">
+                        {
+                        finalWorks.map(x => {
+                            return <Cassette data={x} key={x["id"]} ></Cassette>
+                        })}
+                    </div>     
+                </div>       
+                <div className="realityGenom">
+                    <div className="realityImg">
+                        <img className="logoImgcluster" src={Reality} alt="name-cluster-logo" />
+                    </div>
+                    <div className="cassettesContainer">
+                        {
+                        finalWorks.map(x => {
+                            return <Cassette data={x} key={x["id"]} ></Cassette>
+                        })}
+                    </div>     
+                </div>       
+                <div className="smartGenom">
+                    <div className="smartImg">
+                        <img className="logoImgcluster" src={Smart} alt="name-cluster-logo" />
+                    </div>
+                    <div className="cassettesContainer">
+                        {
+                        finalWorks.map(x => {
+                            return <Cassette data={x} key={x["id"]} ></Cassette>
+                        })}
+                    </div>     
+                </div>       
+            </div> 
+            :
+
             <Countdown date={new Date("2022-06-17T19:00:00+02:00")} />
-            <div className="motionGenom">
-                <div className="motionImg">
-                    <img className="logoImgcluster" src={Motion} alt="name-cluster-logo" />
-                </div>
-                <div className="cassettesContainer">
-                    {
-                    finalWorks.map(x => {
-                        return <Cassette data={x} key={x["id"]} ></Cassette>
-                    })}
-                </div>     
-            </div>       
-            <div className="webAppGenom">
-                <div className="appImg">
-                    <img className="logoImgcluster" src={WebApp} alt="name-cluster-logo" />
-                </div>
-                <div className="cassettesContainer">
-                    {
-                    finalWorks.map(x => {
-                        return <Cassette data={x} key={x["id"]} ></Cassette>
-                    })}
-                </div>     
-            </div>       
-            <div className="realityGenom">
-                <div className="realityImg">
-                    <img className="logoImgcluster" src={Reality} alt="name-cluster-logo" />
-                </div>
-                <div className="cassettesContainer">
-                    {
-                    finalWorks.map(x => {
-                        return <Cassette data={x} key={x["id"]} ></Cassette>
-                    })}
-                </div>     
-            </div>       
-            <div className="smartGenom">
-                <div className="smartImg">
-                    <img className="logoImgcluster" src={Smart} alt="name-cluster-logo" />
-                </div>
-                <div className="cassettesContainer">
-                    {
-                    finalWorks.map(x => {
-                        return <Cassette data={x} key={x["id"]} ></Cassette>
-                    })}
-                </div>     
-            </div>       
+        
+        }
+           
+            
         </div>
     )
 }
