@@ -24,7 +24,7 @@ code {
   background-color: transparent;
 }
 
-.stripesSide{
+#stripes-container{
   display: none;
 }
 
@@ -38,7 +38,7 @@ code {
     justify-content: right;
   }
 
-  .stripesSide{
+  #stripes-container{
     display: block;
   }
 }
