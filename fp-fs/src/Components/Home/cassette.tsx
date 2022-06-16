@@ -94,7 +94,7 @@ export default function Cassette(props: any){
             <div className='fullCassetteWeb'>
                 <div  className={showSide? 'cassette cassetteOpenAnimation': "cassette cassetteClosedAnimation"} onClick={changeShowSide}>
                     <div className='cassetteNameDiv'>
-                        <h1 className='cassetteName'>{props.data.title}</h1>
+                        <h1 className='cassetteName' style={{'color': styling}}>{props.data.title}</h1>
                     </div>
                     <img src={cassette} alt="cassette" className='imgCassette'/>
                     <div className='clusterColors'>
