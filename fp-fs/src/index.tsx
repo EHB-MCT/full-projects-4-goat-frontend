@@ -8,8 +8,8 @@ import Genomineerd from './Components/Resultaten/Genomineerd';
 import Winnaar from './Components/Resultaten/Winnaar';
 import Nav from './Components/Standard/Nav';
 import Footer from './Components/Standard/Footer';
-import Stripes from './Components/Home/Stripes';
 import DetailMob from './Components/Home/details/DetailMob';
+import BackgroundStripes from './Components/Home/Stripes/BackgroundStripes';
 
 
 const root = ReactDOM.createRoot(
@@ -19,7 +19,7 @@ root.render(
   <BrowserRouter>
     <nav><Nav/></nav>
     <div className='bodyContainer'>
-      <Stripes/>
+      <BackgroundStripes/>
       <div id='indexContainer'>
         <Routes>
           <Route path="/"  element={<App/>}/>
