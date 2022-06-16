@@ -10,47 +10,13 @@
 
 .cassetteOpenAnimation {
     transform: rotate3d(-.02, -1, 0, 60deg);
-    //animation: cassetteAnimationOpen 2S;
-    //animation-iteration-count: 1;
-    //animation-fill-mode: inherit;
 
 }
 
 .cassetteCloseAnimation{
     transform: rotate3d(0);
-    //animation: cassetteAnimationClosed 2S;
-    // animation-iteration-count: 1;
-    // animation-fill-mode: inherit;
 
 }
-
-@keyframes cassetteAnimationOpen {
-    0%{
-        transform: rotate3d(0);
-        //transform: perspective(none);
-    }
-
-    100%{
-        transform: rotate3d(-.02, -1, 0, 60deg);
-        //transform: perspective(100cm);
-
-    }
-}
-
-@keyframes cassetteAnimationClosed {
-    0%{
-        transform: rotate3d(-.02, -1, 0, 60deg);
-        //transform: perspective(none);
-    }
-
-    100%{
-        transform: rotate3d(0);
-        //transform: perspective(100cm);
-
-    }
-}
-
-
 
 .cassette img {
     height: 68vh;
