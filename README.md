@@ -48,8 +48,12 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://www.npmjs.com/package/react-countdown 
 13. react go to previous page <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Borislav Hadzhiev  <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: https://bobbyhadz.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: bobbyhadz.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://bobbyhadz.com/blog/react-router-go-back-to-previous-page#:~:text=To%20go%20back%20to%20the,1%20-%20navigate(-1)%20.
+14. Don't show element on specific page <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Asif vora  <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: stackoverflow.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://stackoverflow.com/questions/70494755/how-to-hide-footer-component-for-some-pages-in-react
 
 Details and config of the used server
 --------------------------
