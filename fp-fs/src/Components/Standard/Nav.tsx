@@ -23,9 +23,10 @@ function Nav(){
                 </Link>
 
                 <div className='ButtonsNav'>
-                    <button className='uploadenBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
-                    <button className='stemmenBtn btn'>Uploaden</button>
-                    <button className='searchBtn btn'>Stemming</button>
+                    <button className='resultBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
+                    <button className='uploadenBtn btn'>Uploaden</button>
+                    <button className='stemmenBtn btn'>Stemming</button>
+                    <button className='searchBtn btn'>Platform</button>
                 </div>
             </section>
             <div className="navbar-container">
@@ -50,11 +51,14 @@ function Nav(){
                             <li className="nav-item">
                                 <button className='btn btnMobile'><Link to="/results" className='routingLinks' onClick={()=> setOpen(false)}>Results</Link></button>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <button className='btn btnMobile'>Uploaden</button>
                             </li>
                             <li className="nav-item">
                                 <button className='btn btnMobile'>Stemming</button>
+                            </li> */}
+                            <li className="nav-item">
+                                <button className='btn btnMobile'> <Link to="/" className='routingLinks' onClick={()=> setOpen(false)}>Platform</Link></button>
                             </li>
                         </ul>
                     </div>
