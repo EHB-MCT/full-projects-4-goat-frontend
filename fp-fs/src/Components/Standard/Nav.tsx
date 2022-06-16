@@ -26,7 +26,7 @@ function Nav(){
                     <button className='resultBtn btn'><Link to="/results" className='routingLinks'>Resultaten</Link></button>
                     <button className='uploadenBtn btn'>Uploaden</button>
                     <button className='stemmenBtn btn'>Stemming</button>
-                    <button className='searchBtn btn'>Platform</button>
+                    <button className='searchBtn btn'><a href="https://finalshow.be/" target="_blank" className='routingLinks'>Platform</a></button>
                 </div>
             </section>
             <div className="navbar-container">
@@ -58,30 +58,16 @@ function Nav(){
                                 <button className='btn btnMobile'>Stemming</button>
                             </li> */}
                             <li className="nav-item">
-                                <button className='btn btnMobile'> <Link to="/" className='routingLinks' onClick={()=> setOpen(false)}>Platform</Link></button>
+                                <button className='btn btnMobile'><a href="https://finalshow.be/" target="_blank" className='routingLinks'>Platform</a></button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            {/* <section className="top-nav">
-                <Link to="/" className='routingLinks'>
-                    <div className='logoFinal' >
-                        <img src={Logo} alt="logo-final-show" />
-                    </div>
-                </Link>
-                <input id="menu-toggle" type="checkbox" />
-                <label onClick={()=> setOpen(true)} className='menu-button-container' htmlFor="menu-toggle">
-                    <div className='menu-button'></div>
-                </label>
-                <ul className="menu">
-                    <li><button className='btn btnMobile'><Link to="/results" className='routingLinks' onClick={()=> setOpen(false)}>Resultaten</Link></button></li>
-                    <li><button className='btn btnMobile'>Uploaden</button></li>
-                    <li><button className='btn btnMobile'>Stemming</button></li>
-                </ul>
-            </section> */}
         </div>
     )
 }
 
 export default Nav
+
+{/* <Link to="/" className='routingLinks' onClick={()=> setOpen(false)}>Platform</Link> */}
