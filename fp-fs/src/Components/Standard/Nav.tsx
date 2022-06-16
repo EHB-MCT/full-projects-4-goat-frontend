@@ -51,12 +51,6 @@ function Nav(){
                             <li className="nav-item">
                                 <button className='btn btnMobile'><Link to="/results" className='routingLinks' onClick={()=> setOpen(false)}>Results</Link></button>
                             </li>
-                            {/* <li className="nav-item">
-                                <button className='btn btnMobile'>Uploaden</button>
-                            </li>
-                            <li className="nav-item">
-                                <button className='btn btnMobile'>Stemming</button>
-                            </li> */}
                             <li className="nav-item">
                                 <button className='btn btnMobile'><a href="https://finalshow.be/" target="_blank" className='routingLinks'>Platform</a></button>
                             </li>
@@ -69,5 +63,3 @@ function Nav(){
 }
 
 export default Nav
-
-{/* <Link to="/" className='routingLinks' onClick={()=> setOpen(false)}>Platform</Link> */}
