@@ -8,6 +8,7 @@ import cover_6 from '../../../Assets/cover_6.png'
 import share from '../../../Assets/share_logo.png'
 import '../../../SCSS/DetailSide.scss'
 import ImageSlider from './ImageSlider'
+import phone from '../../../Assets/phone.png'
 
 
 export default function DetailSide(props: any) {
@@ -62,7 +63,7 @@ export default function DetailSide(props: any) {
                 {/* <img src="../../../Assets/search.png" alt="profile-pick"/> */}
                 <div id="contactInfoContainer">
                     <div className='infoFlex'>
-                        <p className='placeText'>Tel:</p>
+                        <img src={phone} alt="phone icon" id='phoneIcon'/>
                         <p className='invulText' >0123456789</p>
                     </div>
                     <div id="mail" className='infoFlex'>
