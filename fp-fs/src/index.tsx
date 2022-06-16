@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <BrowserRouter>
-    <nav><Nav/></nav>
+    <nav className='nav'><Nav/></nav>
     <div className='bodyContainer'>
       <BackgroundStripes/>
       <div id='indexContainer'>
