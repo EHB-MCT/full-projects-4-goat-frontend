@@ -33,26 +33,6 @@ const ImageCarousel: React.FC<{ images?: ImageType[] }> = ({ images }) => {
     }
   };
 
-  const handleRightClick = () => {
-    if (images && images.length > 0) {
-      let newIdx = selectedImageIndex + 1;
-      if (newIdx >= images.length) {
-        newIdx = 0;
-      }
-      handleSelectedImageChange(newIdx);
-    }
-  };
-
-  const handleLeftClick = () => {
-    if (images && images.length > 0) {
-      let newIdx = selectedImageIndex - 1;
-      if (newIdx < 0) {
-        newIdx = images.length - 1;
-      }
-      handleSelectedImageChange(newIdx);
-    }
-  };
-
   return (
     <div>
       <div className="carousel-containerMob">
