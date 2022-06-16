@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import '../../../SCSS/Imageslider.scss'
+import '../../../SCSS/Imageslider.scss';
 
 export type ImageType = { id: number; url: string };
 

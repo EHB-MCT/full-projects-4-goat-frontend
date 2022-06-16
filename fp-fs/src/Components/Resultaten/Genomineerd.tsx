@@ -6,10 +6,10 @@ import "../../SCSS/cassette.scss";
 import "../../SCSS/countdown.scss";
 import Countdown from 'react-countdown';
 
-import Motion from "../../Assets/Logos-Clusters/MOTION_Logo.svg"
-import WebApp from "../../Assets/Logos-Clusters/WEB&APP_LOGO.svg"
-import Reality from "../../Assets/Logos-Clusters/EXTENDEDREALITY_LOGO.svg"
-import Smart from "../../Assets/Logos-Clusters/SMARTTECHNOLOGY_Logo.svg"
+import Motion from "../../Assets/Logos-Clusters/MOTION_Logo.svg";
+import WebApp from "../../Assets/Logos-Clusters/WEB&APP_LOGO.svg";
+import Reality from "../../Assets/Logos-Clusters/EXTENDEDREALITY_LOGO.svg";
+import Smart from "../../Assets/Logos-Clusters/SMARTTECHNOLOGY_Logo.svg";
 
 function Genomineerd(){
     const [finalWorks, setFinalWorks] = useState([])

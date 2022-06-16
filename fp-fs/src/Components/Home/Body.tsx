@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "../../SCSS/Body.scss";
-import "../../SCSS/Button.scss"
+import "../../SCSS/Button.scss";
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "./cassette";
-import Search from "../../Assets/search.png"
+import Search from "../../Assets/search.png";
 
 
 

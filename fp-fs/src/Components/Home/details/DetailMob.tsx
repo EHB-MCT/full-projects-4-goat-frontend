@@ -1,12 +1,12 @@
-import share from '../../../Assets/share_logo.png'
-import cross from '../../../Assets/cross_logo.png'
-import '../../../SCSS/DetailSide.scss'
-import ImageSlider from './ImageSlider'
-import { Link, useNavigate } from 'react-router-dom'
-import phone from '../../../Assets/phone.png'
-import mail from '../../../Assets/email.png'
-import linkedin from '../../../Assets/linkedin.png'
-import instagram from '../../../Assets/instagram.png'
+import share from '../../../Assets/share_logo.png';
+import cross from '../../../Assets/cross_logo.png';
+import '../../../SCSS/DetailSide.scss';
+import ImageSlider from './ImageSlider';
+import { Link, useNavigate } from 'react-router-dom';
+import phone from '../../../Assets/phone.png';
+import mail from '../../../Assets/email.png';
+import linkedin from '../../../Assets/linkedin.png';
+import instagram from '../../../Assets/instagram.png';
 
 
 export default function DetailMob(props: any) {
