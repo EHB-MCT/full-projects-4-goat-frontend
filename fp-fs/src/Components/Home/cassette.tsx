@@ -62,6 +62,7 @@ export default function Cassette(props: any){
     const changeShowSide = () => {
         if(showSide === false) {
             setShowSide(true)
+            
         } else {
             setShowSide(false)
         }
@@ -89,7 +90,7 @@ export default function Cassette(props: any){
             </Link> 
 
             <div className='fullCassetteWeb'>
-                <div className="cassette" onClick={changeShowSide}>
+                <div  className={showSide? 'cassette cassetteOpenAnimation': "cassette cassetteClosedAnimation"} onClick={changeShowSide}>
                     <div className='cassetteNameDiv'>
                         <h1 className='cassetteName'>{props.data.title}</h1>
                     </div>
