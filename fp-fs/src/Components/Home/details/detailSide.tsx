@@ -9,7 +9,9 @@ import share from '../../../Assets/share_logo.png'
 import '../../../SCSS/DetailSide.scss'
 import ImageSlider from './ImageSlider'
 import phone from '../../../Assets/phone.png'
-
+import mail from '../../../Assets/email.png'
+import linkedin from '../../../Assets/linkedin.png'
+import instagram from '../../../Assets/instagram.png'
 
 export default function DetailSide(props: any) {
 
@@ -63,19 +65,19 @@ export default function DetailSide(props: any) {
                 {/* <img src="../../../Assets/search.png" alt="profile-pick"/> */}
                 <div id="contactInfoContainer">
                     <div className='infoFlex'>
-                        <img src={phone} alt="phone icon" id='phoneIcon'/>
+                        <img src={phone} alt="phone icon" className='socialIcon'/>
                         <p className='invulText' >0123456789</p>
                     </div>
                     <div id="mail" className='infoFlex'>
-                        <p className='mailPlaceholder placeText'>Mail:</p>
+                    <img src={mail} alt="mail icon" className='socialIcon'/>
                         <p className='mailAdres invulText'>yousra.boutaârourte@gmail.com</p>
                     </div>
                     <div id="linkedIn" className='infoFlex'>
-                        <p className='placeText'>LinkedIn:</p>
+                    <img src={linkedin} alt="linkedin icon" className='socialIcon'/>
                         <p className='invulText'>Boutaârourte Yousra</p>
                     </div>
                     <div id="Instagram" className='infoFlex'>
-                        <p className='placeText'>Instagram:</p>
+                    <img src={instagram} alt="instagram icon" className='socialIcon'/>
                         <p className='invulText'>@Boutaârourte_Yousra</p>
                     </div>
                 </div>

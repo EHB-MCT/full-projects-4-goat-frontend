@@ -253,6 +253,7 @@ h3, h1, h5, p, span, div, img{
         align-items: center;
         font-size: 400;
         font-size: 9pt;
+        margin-bottom: 3px;
     }
     
     .placeText{
@@ -275,12 +276,17 @@ h3, h1, h5, p, span, div, img{
         margin: 5% 2% 0% 0%;
     }
 
-    #phoneIcon {
+    .socialIcon {
         background-color: white;
         width: 12px;
         padding: 2px;
         border-radius: 15px;
         margin: 0 5px 0 10px;
+    }
+
+    #Instagram img {
+        width: 10px;
+        padding: 4px;
     }
 
 }
