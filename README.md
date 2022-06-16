@@ -38,6 +38,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: DevJazz & MertHaddad <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: stackoverflow.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://stackoverflow.com/questions/70310465/how-can-i-close-my-hamburger-menu-when-clicking-on-a-link-using-react-js-using
+11. Scrollbar <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Estee Tey <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: blog.esteetey.dev <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://blog.esteetey.dev/make-your-website-stand-out-with-a-custom-scrollbar
 
 Details and config of the used server
 --------------------------
