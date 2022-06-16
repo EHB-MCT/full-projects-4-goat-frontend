@@ -1,4 +1,4 @@
-import "../../SCSS/Stripes.scss"
+import "../../../SCSS/Stripes.scss"
 
 function Stripes(){
     return(
