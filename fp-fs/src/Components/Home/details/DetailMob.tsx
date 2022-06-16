@@ -2,7 +2,7 @@ import share from '../../../Assets/share_logo.png'
 import cross from '../../../Assets/cross_logo.png'
 import '../../../SCSS/DetailSide.scss'
 import ImageSlider from './ImageSlider'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import phone from '../../../Assets/phone.png'
 import mail from '../../../Assets/email.png'
 import linkedin from '../../../Assets/linkedin.png'
@@ -11,11 +11,13 @@ import instagram from '../../../Assets/instagram.png'
 
 export default function DetailMob(props: any) {
 
+    const navigate = useNavigate()
+
     return (
         <div className='detailPageContainer'>
             <div id="stripeClusterMob">
                 <h3 className='clusterNameMob'>Motion</h3>
-                <Link to="/results" className='routingLinks'><img src={cross} alt="closing-img" id="cross"/></Link>
+                <div onClick={() => navigate(-1)}className='routingLinks'><img src={cross} alt="closing-img" id="cross"/></div>
             </div>
 
             <h1 id="projectArtistMob">Boutaârourte Yousra</h1>
