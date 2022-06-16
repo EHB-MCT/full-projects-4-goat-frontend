@@ -15,6 +15,7 @@ export default function Cassette(props: any){
 
     const [cassette, setCassette] = useState(String)
     const [cassetteNumber, setCassetteNumber] = useState(Number)
+    const [styling, setStyle] = useState(String)
     const [cluster, setCluster] = useState(String)
     const [showSide, setShowSide] = useState(Boolean)
 
@@ -27,18 +28,23 @@ export default function Cassette(props: any){
         if(number === 1){
             setCassette(side_1)
             setCassetteNumber(1)
+            setStyle('white')
         } else if (number === 2) {
             setCassette(side_2)
             setCassetteNumber(2)
+            setStyle("black")
         } else if (number === 3) {
             setCassette(side_3)
             setCassetteNumber(3)
+            setStyle("white")
         }  else if (number === 4) {
             setCassette(side_4)
             setCassetteNumber(4)
+            setStyle("white")
         }   else if (number === 5) {
             setCassette(side_5)
             setCassetteNumber(5)
+            setStyle("white")
         } 
 
         var numberCluster = Math.floor(Math.random() * (4 - 1 + 1)) + 1
@@ -73,7 +79,7 @@ export default function Cassette(props: any){
             <div className='fullCassetteMob'>
                 <div className="cassette">
                     <div className='cassetteNameDiv'>
-                        <h1 className='cassetteName'>{props.data.title}</h1>
+                        <h1 className='cassetteName' style={{'color': styling}}>{props.data.title}</h1>
                     </div>
                     <img src={cassette} alt="cassette" className='imgCassette'/>
                     <div className='clusterColors'>
