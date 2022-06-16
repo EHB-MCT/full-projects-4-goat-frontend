@@ -6,7 +6,7 @@ import side_2 from '../../Assets/side_2.png'
 import side_3 from '../../Assets/side_3.png'
 import side_4 from '../../Assets/side_4.png'
 import side_5 from '../../Assets/side_5.png'
-import side_6 from '../../Assets/side_6.png'
+
 
 import DetailSide from './details/detailSide'
 import DetailMob from './details/DetailMob'
@@ -40,10 +40,7 @@ export default function Cassette(props: any){
         }   else if (number === 5) {
             setCassette(side_5)
             setCassetteNumber(5)
-        }  else if (number === 6) {
-            setCassette(side_6)
-            setCassetteNumber(6)
-        }
+        } 
 
         var numberCluster = Math.floor(Math.random() * (4 - 1 + 1)) + 1
 

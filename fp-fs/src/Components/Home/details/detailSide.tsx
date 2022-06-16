@@ -4,7 +4,6 @@ import cover_2 from '../../../Assets/cover_2.png'
 import cover_3 from '../../../Assets/cover_3.png'
 import cover_4 from '../../../Assets/cover_4.png'
 import cover_5 from '../../../Assets/cover_5.png'
-import cover_6 from '../../../Assets/cover_6.png'
 import share from '../../../Assets/share_logo.png'
 import '../../../SCSS/DetailSide.scss'
 import ImageSlider from './ImageSlider'
@@ -29,8 +28,6 @@ export default function DetailSide(props: any) {
             setCover(cover_4)
         }else if (props.cassette.cassetteNumber === 5){
             setCover(cover_5)
-        }else if (props.cassette.cassetteNumber === 6){
-            setCover(cover_6)
         }
     }, [])
 
