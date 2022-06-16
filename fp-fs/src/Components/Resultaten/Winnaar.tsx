@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "../Home/cassette";
 import Countdown from 'react-countdown';
+import "../../SCSS/countdown.scss";
 
 function Winnaar(){
     const [finalWorks, setFinalWorks] = useState([])

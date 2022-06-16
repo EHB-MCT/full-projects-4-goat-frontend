@@ -3,7 +3,7 @@ import "../../SCSS/Genomineerd.scss";
 import { finalWorkService } from "../../Services/finalWorkService";
 import Cassette from "../Home/cassette";
 import "../../SCSS/cassette.scss";
-import "../../SCSS/Genomineerd.scss";
+import "../../SCSS/countdown.scss";
 import Countdown from 'react-countdown';
 
 import Motion from "../../Assets/Logos-Clusters/MOTION_Logo.svg"
