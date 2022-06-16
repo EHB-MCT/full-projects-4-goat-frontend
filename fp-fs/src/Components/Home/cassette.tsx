@@ -1,16 +1,15 @@
-import { useEffect, useState } from 'react'
-import '../../SCSS/cassette.scss'
-import '../../SCSS/DetailSide.scss'
-import side_1 from '../../Assets/side_1.png'
-import side_2 from '../../Assets/side_2.png'
-import side_3 from '../../Assets/side_3.png'
-import side_4 from '../../Assets/side_4.png'
-import side_5 from '../../Assets/side_5.png'
+import { useEffect, useState } from 'react';
+import '../../SCSS/cassette.scss';
+import '../../SCSS/DetailSide.scss';
+import side_1 from '../../Assets/side_1.png';
+import side_2 from '../../Assets/side_2.png';
+import side_3 from '../../Assets/side_3.png';
+import side_4 from '../../Assets/side_4.png';
+import side_5 from '../../Assets/side_5.png';
 
 
-import DetailSide from './details/detailSide'
-import DetailMob from './details/DetailMob'
-import { Link } from 'react-router-dom'
+import DetailSide from './details/detailSide';
+import { Link } from 'react-router-dom';
 
 export default function Cassette(props: any){
 

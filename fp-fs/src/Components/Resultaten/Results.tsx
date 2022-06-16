@@ -1,7 +1,5 @@
-import Nav from "../Standard/Nav";
-import Footer from "../Standard/Footer";
-import "../../SCSS/Home.scss"
-import "../../SCSS/ResultsNav.scss"
+import "../../SCSS/Home.scss";
+import "../../SCSS/ResultsNav.scss";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Winnaar from "./Winnaar";

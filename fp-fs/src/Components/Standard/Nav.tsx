@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Final-Show-Logo.svg';
-import Animation from "../../Assets/finalshow_logo_animation_2.gif"
+import Animation from "../../Assets/finalshow_logo_animation_2.gif";
 import '../../SCSS/Button.scss';
 import '../../SCSS/Nav.scss';
 

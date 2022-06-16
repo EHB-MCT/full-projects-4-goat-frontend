@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react'
-import cover_1 from '../../../Assets/cover_1.png'
-import cover_2 from '../../../Assets/cover_2.png'
-import cover_3 from '../../../Assets/cover_3.png'
-import cover_4 from '../../../Assets/cover_4.png'
-import cover_5 from '../../../Assets/cover_5.png'
-import share from '../../../Assets/share_logo.png'
-import '../../../SCSS/DetailSide.scss'
-import ImageSlider from './ImageSlider'
-import phone from '../../../Assets/phone.png'
-import mail from '../../../Assets/email.png'
-import linkedin from '../../../Assets/linkedin.png'
-import instagram from '../../../Assets/instagram.png'
+import { useEffect, useState } from 'react';
+import cover_1 from '../../../Assets/cover_1.png';
+import cover_2 from '../../../Assets/cover_2.png';
+import cover_3 from '../../../Assets/cover_3.png';
+import cover_4 from '../../../Assets/cover_4.png';
+import cover_5 from '../../../Assets/cover_5.png';
+import share from '../../../Assets/share_logo.png';
+import '../../../SCSS/DetailSide.scss';
+import ImageSlider from './ImageSlider';
+import phone from '../../../Assets/phone.png';
+import mail from '../../../Assets/email.png';
+import linkedin from '../../../Assets/linkedin.png';
+import instagram from '../../../Assets/instagram.png';
 
 export default function DetailSide(props: any) {
 
