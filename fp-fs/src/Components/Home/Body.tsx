@@ -115,18 +115,18 @@ function Body(){
 
 
     return(
-        <main>
-            <div>
+        <main id="mainFinalWorks">
+            <div id="SearchFormWrapper">
                 <div id="searchForm">
-                    <input onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
+                    <input className="inputText" onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
                     <img src={Search} alt="search icon" id="searchIcon"/> 
                     
-                    <select onChange={handleChangeSelect}>
-                        <option value="Alles">Alles</option>
-                        <option value="Web en app">Web en App</option>
-                        <option value="Smart Technologies">Smart Technologies</option>
-                        <option value="Motion">Motion</option>
-                        <option value="Extended Reality">Extended Reality</option>
+                    <select onChange={handleChangeSelect} className="clusterSelection">
+                        <option value="Alles" className="clusterOption">Alles</option>
+                        <option value="Web en app" className="clusterOption">Web en App</option>
+                        <option value="Smart Technologies" className="clusterOption">Smart Technologies</option>
+                        <option value="Motion" className="clusterOption">Motion</option>
+                        <option value="Extended Reality" className="clusterOption">Extended Reality</option>
                     </select>
                 </div>
             </div>
@@ -135,15 +135,15 @@ function Body(){
                     <button className="btn filterButtonPhone"  onClick={showForm}>Filter</button>
 
                     <div id="searchFormMobile" style={{'display': displayFilter}}>
-                        <input onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
+                        <input className="inputText"  onChange={event => getInput(event.target.value)} type="text" placeholder="Zoek op titel, student, tag..." />
                         <img src={Search} alt="search icon" id="searchIcon"/> 
                         
-                        <select onChange={handleChangeSelect}>
-                            <option value="Alles">Alles</option>
-                            <option value="Web en app">Web en App</option>
-                            <option value="Smart Technologies">Smart Technologies</option>
-                            <option value="Motion">Motion</option>
-                            <option value="Extended Reality">Extended Reality</option>
+                        <select onChange={handleChangeSelect} className="clusterSelection">
+                            <option value="Alles" className="clusterOption">Alles</option>
+                            <option value="Web en app" className="clusterOption">Web en App</option>
+                            <option value="Smart Technologies" className="clusterOption">Smart Technologies</option>
+                            <option value="Motion" className="clusterOption">Motion</option>
+                            <option value="Extended Reality" className="clusterOption">Extended Reality</option>
                         </select>
                 </div>
                 </div>
