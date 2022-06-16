@@ -23,7 +23,7 @@ export default function Cassette(props: any){
 
         setShowSide(false)
 
-        var number = Math.floor(Math.random() * (6 - 1 + 1)) + 1
+        var number = Math.floor(Math.random() * (5 - 1 + 1)) + 1
 
         if(number === 1){
             setCassette(side_1)
