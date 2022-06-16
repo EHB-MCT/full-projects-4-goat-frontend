@@ -33,7 +33,7 @@ root.render(
         </Routes>
       </div>
     </div>  
-    <footer><Footer/></footer>  
+    <footer id='footer'><Footer/></footer>  
   </BrowserRouter>
 );
 
