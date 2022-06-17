@@ -102,7 +102,7 @@ export default function Cassette(props: any){
                         <div className={cluster}></div>
                     </div>
                 </div>
-                {showSide? <DetailSide cassette={{cassetteNumber}}></DetailSide>: <p></p>}
+                {showSide? <DetailSide data={props.data} cassette={{cassetteNumber}}></DetailSide>: <p></p>}
             </div>
         </div>       
     )
