@@ -47,7 +47,7 @@ export default function Cassette(props: any){
             setStyle("white")
         } 
 
-        if(props.data.cluster === "web"){
+        if(props.data.cluster === "web" || props.data.cluster === "webApp"){
             setCluster("Web")
         } else if (props.data.cluster === "interactiveMotion" || props.data.cluster === "motion") {
             setCluster("Motion")
