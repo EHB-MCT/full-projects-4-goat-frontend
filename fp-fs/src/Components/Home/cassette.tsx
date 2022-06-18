@@ -71,12 +71,9 @@ export default function Cassette(props: any){
        
     }
 
-
-
-
     return (
         <div className='cassetteComplete'>
-            <Link to="/detail">
+            <Link to="/detail" state={props.data}>
             <div className='fullCassetteMob'>
                 <div className="cassette">
                     <div className='cassetteNameDiv'>
