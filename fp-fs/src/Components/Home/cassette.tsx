@@ -49,11 +49,11 @@ export default function Cassette(props: any){
 
         if(props.data.cluster === "web"){
             setCluster("Web")
-        } else if (props.data.cluster === "interactiveMotion") {
+        } else if (props.data.cluster === "interactiveMotion" || props.data.cluster === "motion") {
             setCluster("Motion")
-        } else if (props.data.cluster === "digitalMaking") {
+        } else if (props.data.cluster === "digitalMaking" || props.data.cluster === "smartTechnologies") {
             setCluster("Smart")
-        }  else if (props.data.cluster === "alternativeReality") {
+        }  else if (props.data.cluster === "alternativeReality" || props.data.cluster === "extendedReality") {
             setCluster("Reality")
         }
 
