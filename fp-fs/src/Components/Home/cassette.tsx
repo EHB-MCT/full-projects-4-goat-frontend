@@ -47,15 +47,13 @@ export default function Cassette(props: any){
             setStyle("white")
         } 
 
-        var numberCluster = Math.floor(Math.random() * (4 - 1 + 1)) + 1
-
-        if(numberCluster === 1){
+        if(props.data.cluster === "web"){
             setCluster("Web")
-        } else if (numberCluster === 2) {
+        } else if (props.data.cluster === "interactiveMotion") {
             setCluster("Motion")
-        } else if (numberCluster === 3) {
+        } else if (props.data.cluster === "digitalMaking") {
             setCluster("Smart")
-        }  else if (numberCluster === 4) {
+        }  else if (props.data.cluster === "alternativeReality") {
             setCluster("Reality")
         }
 
