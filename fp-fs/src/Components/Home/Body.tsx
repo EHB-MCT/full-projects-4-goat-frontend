@@ -22,69 +22,87 @@ function Body(){
               setSelectedWorks(templateData)
               setDisplayFilter("none")
               setCluster(templateData)
+              setInput("")
           })
 
       
     }, [])
 
     const handleChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        /* val filteredResults = finalWorks.filter {it.cluster == event.target.value}
-            setSelectedWorks(filteredResults) */
 
-            if(selectedWorks.length === finalWorks.length){
-                if (event.target.value === "Alles"){
-                    var filteredResults = finalWorks.slice(0,40)
+            // if(selectedWorks.length === finalWorks.length){ 
+            //     if(event.target.value === "Alles"){
+            //         setCluster(finalWorks)
+            //         setSelectedWorks(finalWorks)
+            //     } else {
+            //         var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value)
+            //         setCluster(filteredResults)
+            //         setSelectedWorks(filteredResults)
+            //     }
+            // } else {
+                
+            //     if(event.target.value === "Alles"){
+            //         setCluster(finalWorks)
+            //         var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
+            //         setSelectedWorks(filteredResults)
+            //     } else {
+            //         var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value)
+            //         setCluster(filteredResults)
+            //         var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+            //         setSelectedWorks(filteredResults)
+            //     }
+            // }
+
+            
+            if(selectedWorks.length === finalWorks.length){ 
+                if(event.target.value === "Alles"){
+                    setCluster(finalWorks)
+                    setSelectedWorks(finalWorks)
+                } else if(event.target.value === "webApp"){
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "web")
                     setCluster(filteredResults)
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Web en app"){
-                    var filteredResults = finalWorks.slice(0,10)
+                }else if(event.target.value === "smartTechnologies"){
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "digitalMaking")
                     setCluster(filteredResults)
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Smart Technologies"){
-                    var filteredResults = finalWorks.slice(10,20)
+                }else if(event.target.value === "motion"){
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "interactiveMotion")
                     setCluster(filteredResults)
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Motion"){
-                    var filteredResults = finalWorks.slice(20,30)
-                    setCluster(filteredResults)
-                    setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Extended Reality"){
-                    var filteredResults = finalWorks.slice(30,40)
+                }else if(event.target.value === "extendedReality"){
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "alternativeReality")
                     setCluster(filteredResults)
                     setSelectedWorks(filteredResults)
                 }
             } else {
-                if (event.target.value === "Alles"){
-                    var filteredResults = finalWorks.slice(0,40)
-                    setCluster(filteredResults)
-                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                
+                if(event.target.value === "Alles"){
+                    setCluster(finalWorks)
+                    var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Web en app"){
-                    var filteredResults = finalWorks.slice(0,10)
+                } else if(event.target.value === "webApp") {
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "web")
                     setCluster(filteredResults)
-                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Smart Technologies"){
-                    var filteredResults = finalWorks.slice(10,20)
+                } else if(event.target.value === "smartTechnologies") {
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "digitalMaking")
                     setCluster(filteredResults)
-                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Motion"){
-                    var filteredResults = finalWorks.slice(20,30)
+                }else if(event.target.value === "motion") {
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "interactionMotion")
                     setCluster(filteredResults)
-                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
-                }else if(event.target.value === "Extended Reality"){
-                    var filteredResults = finalWorks.slice(30,40)
+                }else if(event.target.value === "extendedReality") {
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "alternativeReality")
                     setCluster(filteredResults)
-                    filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
                 }
-            }
-
-
-          
-       
+            }     
     }
 
     const getInput = (inputForm: any) => {
@@ -124,10 +142,10 @@ function Body(){
                     
                     <select onChange={handleChangeSelect} className="clusterSelection">
                         <option value="Alles" className="clusterOption">Alles</option>
-                        <option value="Web en app" className="clusterOption">Web en App</option>
-                        <option value="Smart Technologies" className="clusterOption">Smart Technologies</option>
-                        <option value="Motion" className="clusterOption">Motion</option>
-                        <option value="Extended Reality" className="clusterOption">Extended Reality</option>
+                        <option value="webApp" className="clusterOption">Web en App</option>
+                        <option value="smartTechnologies" className="clusterOption">Smart Technologies</option>
+                        <option value="motion" className="clusterOption">Motion</option>
+                        <option value="extendedReality" className="clusterOption">Extended Reality</option>
                     </select>
                 </div>
             </div>
@@ -141,10 +159,10 @@ function Body(){
                         
                         <select onChange={handleChangeSelect} className="clusterSelection">
                             <option value="Alles" className="clusterOption">Alles</option>
-                            <option value="Web en app" className="clusterOption">Web en App</option>
-                            <option value="Smart Technologies" className="clusterOption">Smart Technologies</option>
-                            <option value="Motion" className="clusterOption">Motion</option>
-                            <option value="Extended Reality" className="clusterOption">Extended Reality</option>
+                            <option value="webApp" className="clusterOption">Web en App</option>
+                            <option value="smartTechnologies" className="clusterOption">Smart Technologies</option>
+                            <option value="motion" className="clusterOption">Motion</option>
+                            <option value="extendedReality" className="clusterOption">Extended Reality</option>
                         </select>
                 </div>
                 </div>
