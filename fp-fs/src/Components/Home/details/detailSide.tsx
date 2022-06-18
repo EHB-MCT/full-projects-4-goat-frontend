@@ -11,6 +11,7 @@ import phone from '../../../Assets/phone.png';
 import mail from '../../../Assets/email.png';
 import linkedin from '../../../Assets/linkedin.png';
 import instagram from '../../../Assets/instagram.png';
+import Slider from './Slider';
 
 export default function DetailSide(props: any) {
 
@@ -31,7 +32,6 @@ export default function DetailSide(props: any) {
         }
     }, [])
 
-
     return (
     <div className='detailContainer'>
         <img src={cover} alt="" className='cover'/>
@@ -50,7 +50,8 @@ export default function DetailSide(props: any) {
                 <p className='nameProject'>{props.data.title}</p>
             </div>
 
-            <ImageSlider/>
+            {/* <ImageSlider/> */}
+            <Slider data={props.data}/>
 
             <h3 className='beschrijvingPlaceholder'>PROJECTBESCHRIJVING</h3>
             <p className='beschrijving'>{props.data.description}</p>
@@ -92,3 +93,4 @@ export default function DetailSide(props: any) {
     </div>
     )
 }
+
