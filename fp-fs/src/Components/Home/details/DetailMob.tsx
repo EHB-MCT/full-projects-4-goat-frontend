@@ -32,9 +32,8 @@ export default function DetailMob(props: any) {
                 <h5 className='projectPlaceHolderMob'>PROJECT:</h5>
                 <p className='nameProjectMob'>{state.title}</p>
             </div>
-
-            <ImageSlider/>
-            {/* <Slider data={state}/> */}
+            
+            <Slider data={state}/>
 
             <h3 className='beschrijvingPlaceholderMob'>PROJECTBESCHRIJVING</h3>
             <p className='beschrijvingMob'>{state.description}</p>

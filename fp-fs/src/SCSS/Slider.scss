@@ -1,3 +1,49 @@
+#vid2 {
+    height: 30vh;
+    width: 97%;
+    background-color: transparent;
+}
+  
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+  
+.mySwiper2 {
+    margin-top: 5%;
+    margin-left: 3%;
+    height: 30vh;
+}
+  
+.mySwiper {
+    height: 9vh;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-left: 3%;
+}
+  
+#vid{
+    background-color: transparent;
+    height: 7vh;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+  
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+  
+.swiper-slide img {
+    display: block;
+    width: 97%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (min-width:780px){
     .swiper-slide img {
       display: block;
@@ -44,13 +90,6 @@
     
     .mySwiper .swiper-slide-thumb-active {
       opacity: 1;
-    }
-    
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
     }
     
   }
