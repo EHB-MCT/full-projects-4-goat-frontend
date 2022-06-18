@@ -6,7 +6,6 @@ import cover_4 from '../../../Assets/cover_4.png';
 import cover_5 from '../../../Assets/cover_5.png';
 import share from '../../../Assets/share_logo.png';
 import '../../../SCSS/DetailSide.scss';
-import ImageSlider from './ImageSlider';
 import phone from '../../../Assets/phone.png';
 import mail from '../../../Assets/email.png';
 import linkedin from '../../../Assets/linkedin.png';

@@ -1,7 +1,6 @@
 import share from '../../../Assets/share_logo.png';
 import cross from '../../../Assets/cross_logo.png';
 import '../../../SCSS/DetailSide.scss';
-import ImageSlider from './ImageSlider';
 import { useNavigate, useLocation } from 'react-router-dom';
 import phone from '../../../Assets/phone.png';
 import mail from '../../../Assets/email.png';
