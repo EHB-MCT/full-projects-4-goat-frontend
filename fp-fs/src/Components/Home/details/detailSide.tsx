@@ -15,6 +15,8 @@ import Slider from './Slider';
 export default function DetailSide(props: any) {
 
     const [cover, setCover] = useState(String)
+    const [cluster, setCluster] = useState(String)
+    const [clusterClass, setClusterClass] = useState(String)
 
     useEffect(() => {
     
@@ -29,6 +31,21 @@ export default function DetailSide(props: any) {
         }else if (props.cassette.cassetteNumber === 5){
             setCover(cover_5)
         }
+
+
+        if(props.data.cluster === "web" || props.data.cluster === "webApp"){
+            setCluster("Web en App")
+            setClusterClass("clusterName Web")
+        } else if (props.data.cluster === "interactiveMotion" || props.data.cluster === "motion") {
+            setCluster("Motion")
+            setClusterClass("clusterName Motion")
+        } else if (props.data.cluster === "digitalMaking" || props.data.cluster === "smartTechnologies") {
+            setCluster("Smart Technologies")
+            setClusterClass("clusterName Smart")
+        }  else if (props.data.cluster === "alternativeReality" || props.data.cluster === "extendedReality") {
+            setCluster("Extended Reality")
+            setClusterClass("clusterName Reality")
+        }
     }, [])
 
     return (
@@ -38,7 +55,7 @@ export default function DetailSide(props: any) {
         <div className='onCoverElement'>
             <div id="stripeCluster">
                 {/* <div id="colorStripe"></div> */}
-                <h3 className='clusterName'>{props.data.cluster}</h3>
+                <h3 className={clusterClass}>{cluster}</h3>
             </div>
 
             <h1 id="projectArtist">{props.data.user.map((users:any) =>{

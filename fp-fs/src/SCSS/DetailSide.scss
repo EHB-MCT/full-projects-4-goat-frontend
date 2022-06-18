@@ -30,6 +30,8 @@ h3, h1, h5, p, span, div, img{
     justify-content: space-between;
 }
 
+
+
 .smartGenom{
     margin-bottom: 6%;
 }
@@ -195,10 +197,25 @@ h3, h1, h5, p, span, div, img{
         font-size: 9pt;
         width: 8vw;
         height: 2vh;
-        background-color: $orange;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .Web {
+        background-color: $red;
+    }
+    
+    .Motion {
+        background-color: $orange;
+    }
+    
+    .Smart {
+        background-color: $blue;
+    }
+    
+    .Reality {
+        background-color: $yellow;
     }
     
     #projectArtist{
