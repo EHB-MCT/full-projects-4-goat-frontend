@@ -45,10 +45,25 @@ h3, h1, h5, p, span, div, img{
     font-size: 15pt;
     width: 50vw;
     height: 4vh;
-    background-color: $orange;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.Web {
+    background-color: $red;
+}
+
+.Motion {
+    background-color: $orange;
+}
+
+.Smart {
+    background-color: $blue;
+}
+
+.Reality {
+    background-color: $yellow;
 }
 
 #projectArtistMob{
@@ -202,21 +217,7 @@ h3, h1, h5, p, span, div, img{
         justify-content: center;
     }
 
-    .Web {
-        background-color: $red;
-    }
-    
-    .Motion {
-        background-color: $orange;
-    }
-    
-    .Smart {
-        background-color: $blue;
-    }
-    
-    .Reality {
-        background-color: $yellow;
-    }
+
     
     #projectArtist{
         font-size: 19pt;

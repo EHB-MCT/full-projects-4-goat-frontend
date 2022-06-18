@@ -7,6 +7,7 @@ import mail from '../../../Assets/email.png';
 import linkedin from '../../../Assets/linkedin.png';
 import instagram from '../../../Assets/instagram.png';
 import Slider from './Slider';
+import { useState, useEffect } from 'react';
 
 
 export default function DetailMob(props: any) {
@@ -15,12 +16,32 @@ export default function DetailMob(props: any) {
 
     const location = useLocation();
     const state:any = location.state;
+
+    const [cluster, setCluster] = useState(String)
+    const [clusterClass, setClusterClass] = useState(String)
+
+    useEffect(() => {
+
+        if(state.cluster === "web" || state.cluster === "webApp"){
+            setCluster("Web en App")
+            setClusterClass("clusterNameMob Web")
+        } else if (state.cluster === "interactiveMotion" || state.cluster === "motion") {
+            setCluster("Motion")
+            setClusterClass("clusterNameMob Motion")
+        } else if (state.cluster === "digitalMaking" || state.cluster === "smartTechnologies") {
+            setCluster("Smart Technologies")
+            setClusterClass("clusterNameMob Smart")
+        }  else if (state.cluster === "alternativeReality" || state.cluster === "extendedReality") {
+            setCluster("Extended Reality")
+            setClusterClass("clusterNameMob Reality")
+        }
+    }, [])
     
 
     return (
         <div className='detailPageContainer'>
             <div id="stripeClusterMob">
-                <h3 className='clusterNameMob'>{state.cluster}</h3>
+                <h3 className={clusterClass}>{cluster}</h3>
                 <div onClick={() => navigate(-1)}className='routingLinks'><img src={cross} alt="closing-img" id="cross"/></div>
             </div>
 
