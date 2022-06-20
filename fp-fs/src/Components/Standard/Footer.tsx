@@ -6,7 +6,7 @@ function Footer(){
 
     const pathName = useLocation().pathname
 
-    if(pathName === "/detail"){
+    if(pathName === "/detail" || pathName.split("/")[1] === "finalwork"){
         return null
     }
 

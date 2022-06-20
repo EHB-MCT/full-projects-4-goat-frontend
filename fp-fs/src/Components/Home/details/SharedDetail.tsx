@@ -1,6 +1,7 @@
+import '../../../SCSS/sharedDetail.scss'
 
 export default function SharedDetail(){
     return(
-        <p>Hi</p>
+        <div id='backgroundRaster'>Hi</div>
     )
 }
