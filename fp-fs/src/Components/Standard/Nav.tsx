@@ -17,7 +17,7 @@ function Nav(){
 
     const pathName = useLocation().pathname
 
-    if(pathName === "/detail" || pathName.split("/")[1] === "finalwork"){
+    if(pathName === "/detail"){
         return null
     }
 
