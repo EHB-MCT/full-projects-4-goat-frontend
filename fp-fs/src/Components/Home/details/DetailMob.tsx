@@ -8,6 +8,7 @@ import linkedin from '../../../Assets/linkedin.png';
 import instagram from '../../../Assets/instagram.png';
 import Slider from './Slider';
 import { useState, useEffect } from 'react';
+import { RWebShare } from 'react-web-share';
 
 
 export default function DetailMob(props: any) {
@@ -89,6 +90,16 @@ export default function DetailMob(props: any) {
             <div id="shareContainerMob">
                 <img src={share} alt="share-icon" id="shareIconMob"/>
             </div>
+            <RWebShare
+        data={{
+          text: "Bekijk hier mijn eindwerk",
+          url: "https://on.natgeo.com/2zHaNup",
+          title: "Flamingos",
+        }}
+        onClick={() => console.log("shared successfully!")}
+      >
+        <button>Share 🔗</button>
+      </RWebShare>
         </div>
     )
 }

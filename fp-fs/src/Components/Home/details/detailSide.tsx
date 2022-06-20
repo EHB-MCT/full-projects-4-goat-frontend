@@ -4,13 +4,17 @@ import cover_2 from '../../../Assets/cover_2.png';
 import cover_3 from '../../../Assets/cover_3.png';
 import cover_4 from '../../../Assets/cover_4.png';
 import cover_5 from '../../../Assets/cover_5.png';
-import share from '../../../Assets/share_logo.png';
+import shareIcon from '../../../Assets/share_logo.png';
 import '../../../SCSS/DetailSide.scss';
 import phone from '../../../Assets/phone.png';
 import mail from '../../../Assets/email.png';
 import linkedin from '../../../Assets/linkedin.png';
 import instagram from '../../../Assets/instagram.png';
 import Slider from './Slider';
+import {CopyToClipboard} from 'react-copy-to-clipboard';
+import { RWebShare } from 'react-web-share';
+
+
 
 export default function DetailSide(props: any) {
 
@@ -48,6 +52,13 @@ export default function DetailSide(props: any) {
         }
     }, [])
 
+    const test = () => {
+      
+    }
+
+
+  
+
     return (
     <div className='detailContainer'>
         <img src={cover} alt="" className='cover'/>
@@ -58,7 +69,7 @@ export default function DetailSide(props: any) {
                 <h3 className={clusterClass}>{cluster}</h3>
             </div>
 
-            <h1 id="projectArtist">{props.data.user.map((users:any) =>{
+       <h1 id="projectArtist">{props.data.user.map((users:any) =>{
                 return users.name
             })}</h1>
             <div id="projectName">
@@ -73,7 +84,7 @@ export default function DetailSide(props: any) {
             <p className='beschrijving'>{props.data.description}</p>
 
             <div id="personalInfo">
-                <div id="contactInfoContainer">
+              <div id="contactInfoContainer">
                     {props.data.socials.map((social:any) => {
                         return(
                             <div>
@@ -98,12 +109,30 @@ export default function DetailSide(props: any) {
                             </div>
                         )
                     })}
-                </div>
+                </div> 
 
             </div>
             <div id="shareContainer">
-                <img src={share} alt="share-icon" id="shareIcon"/>
-            </div>
+                <CopyToClipboard text='http://finalshow.be/showcase/finalwork/{}'>
+                <img onClick={test} src={shareIcon} alt="share-icon" id="shareIcon"/>
+                </CopyToClipboard>
+               
+            </div>  
+            <RWebShare
+            data={{
+            text:"Bekijk hier mijn final work",
+            url: `http://localhost:3000/finalwork/${props.data.id}`,
+            title: "Mijn final work",
+            }}
+            sites={["facebook"]}
+            onClick={() => console.log("shared successfully!")}
+        >
+            <button>Share 🔗</button>
+            </RWebShare>
+
+            <div>
+    
+    </div>
 
         </div> 
     </div>
