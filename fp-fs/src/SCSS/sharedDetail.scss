@@ -14,6 +14,10 @@
     right: 5%;
 }
 
+#crossShared:hover {
+    cursor: pointer;
+}
+
 #finalLogoSharedVersion {
     position: fixed;
     width: 180px;
@@ -28,9 +32,6 @@
     right: 0;
 }
 
-#crossSharedWeb {
-    display: none;
-}
 
 #cassetteBackgroundShared {
     background-color: black;
@@ -53,7 +54,7 @@
     }
 
     #crossShared {
-        display: none;
+       top: 20%;
     }
 
     #ehbLogoSharedVersion {
