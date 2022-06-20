@@ -46,21 +46,21 @@ export default function DetailMob(props: any) {
                 <div onClick={() => navigate(-1)}className='routingLinks'><img src={cross} alt="closing-img" id="cross"/></div>
             </div>
 
-            <h1 id="projectArtistMob">{state.user.map((users:any) =>{
+            {/* <h1 id="projectArtistMob">{state.user.map((users:any) =>{
                 return users.name
-            })}</h1>
+            })}</h1> */}
             <div id="projectNameMob">
                 <h5 className='projectPlaceHolderMob'>PROJECT:</h5>
                 <p className='nameProjectMob'>{state.title}</p>
             </div>
-            
-            <Slider data={state}/>
+{/*             
+            <Slider data={state}/> */}
 
             <h3 className='beschrijvingPlaceholderMob'>PROJECTBESCHRIJVING</h3>
             <p className='beschrijvingMob'>{state.description}</p>
 
             <div id="personalInfoMob">
-                <div id="contactInfoContainerMob">
+                {/* <div id="contactInfoContainerMob">
                     {state.socials.map((social:any) => {
                         return(
                             <div>
@@ -85,21 +85,22 @@ export default function DetailMob(props: any) {
                             </div>
                         )
                     })}
-                </div>
+                </div> */}
             </div>
             <div id="shareContainerMob">
-                <img src={share} alt="share-icon" id="shareIconMob"/>
-            </div>
             <RWebShare
-        data={{
-          text: "Bekijk hier mijn eindwerk",
-          url: "https://on.natgeo.com/2zHaNup",
-          title: "Flamingos",
-        }}
-        onClick={() => console.log("shared successfully!")}
-      >
-        <button>Share 🔗</button>
-      </RWebShare>
+                    data={{
+                    text:"Bekijk hier mijn final work",
+                    url: `http://localhost:3000/finalwork/${state.id}`,
+                    title: "Mijn final work",
+                    }}
+                    sites={["facebook", "instagram", "linkedin"]}
+                    onClick={() => console.log("shared successfully!")}
+                    >
+                <img  src={share} alt="share-icon" id="shareIconMob"/>
+            </RWebShare>
+            </div>
+           
         </div>
     )
 }
