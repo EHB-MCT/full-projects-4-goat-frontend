@@ -5,7 +5,6 @@
     background-color: black;
     width: 100vw;
    height: 100vh;
-   overflow-y: scroll;
 }
 
 #crossShared {
@@ -29,18 +28,47 @@
     right: 0;
 }
 
+#crossSharedWeb {
+    display: none;
+}
+
+#cassetteBackgroundShared {
+    background-color: black;
+    width: 95vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 80px;
+    overflow-y: scroll;
+}
+
 @media (min-width:780px){
     #backgroundRaster {
         position: inherit;
     background-image: url('../Assets/Background-Raster.svg');
-    width: 65vw;
-    min-height: 75vh;
-    max-height: 75vh;
+    background-color: transparent;
+    width: 70vw;
+    height: 70vh;
+    padding-top: 60px;
     margin-left: 15vw;
     }
 
     #crossShared {
         display: none;
+    }
+
+    #ehbLogoSharedVersion {
+        display: none;
+    }
+
+    #finalLogoSharedVersion {
+        display: none;
+    }
+
+    #cassetteBackgroundShared {
+        width: 90%;
+        height: 85%;
+        margin: auto;  
+        overflow-y: hidden;
     }
     
 }

@@ -8,7 +8,10 @@ export default function SharedDetail(){
         <div id='backgroundRaster'>
             <img src={finalLogo} alt="" id='finalLogoSharedVersion'/>
             <img src={ehbLogo} alt="" id='ehbLogoSharedVersion'/>
-             <div className='routingLinks'><img src={cross} alt="closing-img" id="crossShared"/></div>
+            <img src={cross} alt="closing-img" id="crossShared"/>
+            <div id='cassetteBackgroundShared'>
+                <img src={cross} alt="closing-img" id="crossSharedWeb"/>
+            </div>
         </div>
     )
 }
