@@ -11,9 +11,9 @@ Reference to used code
 2. Lessen en oefening Studio Hyper Drive
 3. Eindwerken Hannelore Maes en Liese Cordeyn
 4. Image Gallery Slider on detailpage <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Dave Howson <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: codesandbox.io <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codesandbox.io/s/github/davehowson/react-image-carousel?file=/src/components/image-carousel/index.tsx
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Swiperjs <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: https://swiperjs.com/ <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://codesandbox.io/s/pfhz3h?file=/src/styles.css:228-1350
 5. Add gradient overlay to text <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Sarah L. Fossheim <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: fossheim.com <br/>
@@ -54,6 +54,10 @@ Reference to used code
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: Asif vora  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: stackoverflow.com <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://stackoverflow.com/questions/70494755/how-to-hide-footer-component-for-some-pages-in-react
+14. Passing data through with Link(Routing) <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Author: A Goodman  <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site: kindacode.com <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link: https://www.kindacode.com/article/react-router-passing-data-states-through-links/
 
 Details and config of the used server
 --------------------------

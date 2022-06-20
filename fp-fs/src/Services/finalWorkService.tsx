@@ -2,7 +2,7 @@ import React from "react";
 
 class FinalWorkService {
 
-    private readonly url = 'https://jsonplaceholder.typicode.com/posts'
+    private readonly url = 'http://10.3.50.231/finalwork'
 
     public async fetchFinalWorks(){
         const response = await fetch(`${this.url}`);

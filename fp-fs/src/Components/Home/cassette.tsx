@@ -47,15 +47,13 @@ export default function Cassette(props: any){
             setStyle("white")
         } 
 
-        var numberCluster = Math.floor(Math.random() * (4 - 1 + 1)) + 1
-
-        if(numberCluster === 1){
+        if(props.data.cluster === "web" || props.data.cluster === "webApp"){
             setCluster("Web")
-        } else if (numberCluster === 2) {
+        } else if (props.data.cluster === "interactiveMotion" || props.data.cluster === "motion") {
             setCluster("Motion")
-        } else if (numberCluster === 3) {
+        } else if (props.data.cluster === "digitalMaking" || props.data.cluster === "smartTechnologies") {
             setCluster("Smart")
-        }  else if (numberCluster === 4) {
+        }  else if (props.data.cluster === "alternativeReality" || props.data.cluster === "extendedReality") {
             setCluster("Reality")
         }
 
@@ -71,12 +69,9 @@ export default function Cassette(props: any){
        
     }
 
-
-
-
     return (
         <div className='cassetteComplete'>
-            <Link to="/detail">
+            <Link to="/detail" state={props.data}>
             <div className='fullCassetteMob'>
                 <div className="cassette">
                     <div className='cassetteNameDiv'>
@@ -102,7 +97,7 @@ export default function Cassette(props: any){
                         <div className={cluster}></div>
                     </div>
                 </div>
-                {showSide? <DetailSide cassette={{cassetteNumber}}></DetailSide>: <p></p>}
+                {showSide? <DetailSide data={props.data} cassette={{cassetteNumber}}></DetailSide>: <p></p>}
             </div>
         </div>       
     )
