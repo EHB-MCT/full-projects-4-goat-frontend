@@ -46,27 +46,27 @@ export default function DetailMob(props: any) {
                 <div onClick={() => navigate(-1)}className='routingLinks'><img src={cross} alt="closing-img" id="cross"/></div>
             </div>
 
-            {/* <h1 id="projectArtistMob">{state.user.map((users:any) =>{
+             <h1 id="projectArtistMob">{state.user.map((users:any) =>{
                 return users.name
-            })}</h1> */}
+            })}</h1> 
             <div id="projectNameMob">
                 <h5 className='projectPlaceHolderMob'>PROJECT:</h5>
                 <p className='nameProjectMob'>{state.title}</p>
             </div>
-{/*             
-            <Slider data={state}/> */}
+            
+            <Slider data={state}/> 
 
             <h3 className='beschrijvingPlaceholderMob'>PROJECTBESCHRIJVING</h3>
             <p className='beschrijvingMob'>{state.description}</p>
 
             <div id="personalInfoMob">
-                {/* <div id="contactInfoContainerMob">
+             <div id="contactInfoContainerMob">
                     {state.socials.map((social:any) => {
                         return(
                             <div>
                                 <div className='infoFlexMob'>
                                     <img src={phone} alt="phone icon" className='socialIcon'/>
-                                    <p className='invulTextMob'>{social.tel}</p>
+                                    <p className='invulTextMob'>+32 {social.tel}</p>
                                 </div>
                                 <div id="maiMobl" className='infoFlexMob'>
                                 <img src={mail} alt="mail icon" className='socialIcon'/>
@@ -85,7 +85,7 @@ export default function DetailMob(props: any) {
                             </div>
                         )
                     })}
-                </div> */}
+                </div> 
             </div>
             <div id="shareContainerMob">
             <RWebShare

@@ -82,7 +82,7 @@ export default function DetailSide(props: any) {
                             <div>
                                  <div className='infoFlex'>
                                     <img src={phone} alt="phone icon" className='socialIcon'/>
-                                    <p className='invulText'>{social.tel}</p>
+                                    <p className='invulText'>+32 {social.tel}</p>
                                 </div>
                                 <div id="mail" className='infoFlex'>
                                 <img src={mail} alt="mail icon" className='socialIcon'/>
