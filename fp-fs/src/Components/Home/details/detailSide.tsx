@@ -108,7 +108,7 @@ export default function DetailSide(props: any) {
             <RWebShare
                     data={{
                     text:"Bekijk hier mijn final work",
-                    url: `http://localhost:3000/finalwork/${props.data.id}`,
+                    url: `http://finalshow.be/showcase/finalwork/${props.data.id}`,
                     title: "Mijn final work",
                     }}
                     sites={["facebook", "instagram", "linkedin"]}
