@@ -32,7 +32,7 @@
 }
 
 .cassetteName {
-    font-size: 12pt;
+    font-size: 16pt;
     font-weight: 400;
     color: white;
     writing-mode: vertical-lr;
@@ -51,6 +51,7 @@
     height: 8%;
     position: absolute;
     bottom: 10%;
+    opacity: 0.85;
 }
 
 .clusterColors div {
