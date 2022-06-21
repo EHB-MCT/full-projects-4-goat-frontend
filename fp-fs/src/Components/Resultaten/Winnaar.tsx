@@ -35,17 +35,19 @@ function Winnaar(){
                         <p>{days < 10? <span>0{days}</span>: <span>{days}</span>  }</p>
                         <p>{days <= 1? <span>Dag</span>: <span>Dagen</span>  }</p>
                     </div>
+                    <div id="clock">
                     <div id="hours">
-                        <p>{hours < 10? <span>0{hours}</span>: <span>{hours}</span>  }</p>
+                        <p>{hours < 10? <span>0{hours} :</span>: <span>{hours} :</span>  }</p>
                         <p>{hours <= 1? <span>Uur</span>: <span>Uren</span>  }</p>
                     </div>
                     <div id="minutes">
-                        <p>{minutes < 10? <span>0{minutes}</span>: <span>{minutes}</span>  }</p>
+                        <p>{minutes < 10? <span>0{minutes} :</span>: <span>{minutes} :</span>  }</p>
                         <p>{minutes <= 1? <span>Min</span>: <span>Min</span>  }</p>
                     </div>
                     <div id="seconds">
                         <p>{seconds < 10? <span>0{seconds}</span>: <span>{seconds}</span>  }</p>
                         <p>{seconds <= 1? <span>Sec</span>: <span>Sec</span>  }</p>
+                    </div>
                     </div>
                 </div>
               
