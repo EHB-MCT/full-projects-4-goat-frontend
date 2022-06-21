@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "SevenSegment";
+    src: url("../Assets/fonts/SevenSegment.ttf");
+}
+
 .Countdown {
     width: 90vw;
     margin: auto
@@ -21,6 +26,12 @@
     flex-direction: column;
     align-items: center;
     padding: 5px 10px;
+    font-weight: bold;
+    font-family: "SevenSegment",sans-serif;
+}
+
+#CountDownStyle div p{
+        padding: .25em;
 }
 
 #CountDownStyle div p:first-child{
@@ -42,9 +53,11 @@
     
     #CountDownStyle div p{
         font-size: 20pt;
+        
     }
 
     #CountDownStyle div p:first-child{
         font-size: 45pt;
+
     }
 }
