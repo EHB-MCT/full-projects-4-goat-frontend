@@ -83,18 +83,18 @@ export default function DetailSide(props: any) {
 
             <div id="personalInfo">
                <div id="contactInfoContainer">
+               <div id="mail" className='infoFlex'>
+                                <img src={mail} alt="mail icon" className='socialIcon'/>
+                                    <p className='mailAdres invulText'>{props.data.user.map((users:any) =>{
+                                        return users.email
+                                    })}</p>
+                                </div>
                     {props.data.socials.map((social:any) => {
                         return(
                             <div>
                                  <div className='infoFlex'>
                                     <img src={phone} alt="phone icon" className='socialIcon'/>
                                     <p className='invulText'>+32 {social.tel}</p>
-                                </div>
-                                <div id="mail" className='infoFlex'>
-                                <img src={mail} alt="mail icon" className='socialIcon'/>
-                                    <p className='mailAdres invulText'>{props.data.user.map((users:any) =>{
-                                        return users.email
-                                    })}</p>
                                 </div>
                                 <div id="linkedIn" className='infoFlex'>
                                 <img src={linkedin} alt="linkedin icon" className='socialIcon'/>
