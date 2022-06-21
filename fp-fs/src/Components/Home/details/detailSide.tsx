@@ -20,25 +20,31 @@ export default function DetailSide(props: any) {
     const [cover, setCover] = useState(String)
     const [cluster, setCluster] = useState(String)
     const [clusterClass, setClusterClass] = useState(String)
+    const [backgroundClass, setBackgroundClass] = useState(String)
 
     useEffect(() => {
     
         if (props.cassette.cassetteNumber === 1){
             setCover(cover_1)
+            setBackgroundClass("beschrijving black")
         }else if (props.cassette.cassetteNumber === 2){
             setCover(cover_2)
+            setBackgroundClass("beschrijving black")
         } else if (props.cassette.cassetteNumber === 3){
             setCover(cover_3)
+            setBackgroundClass("beschrijving black")
         }else if (props.cassette.cassetteNumber === 4){
             setCover(cover_4)
+            setBackgroundClass("beschrijving blue")
         }else if (props.cassette.cassetteNumber === 5){
             setCover(cover_5)
+            setBackgroundClass("beschrijving black")
         }
 
 
         if(props.data.cluster === "web" || props.data.cluster === "webApp"){
             setCluster("Web en App")
-            setClusterClass("clusterName Web")
+            setClusterClass("clusterName Web")            
         } else if (props.data.cluster === "interactiveMotion" || props.data.cluster === "motion") {
             setCluster("Motion")
             setClusterClass("clusterName Motion")
@@ -73,7 +79,7 @@ export default function DetailSide(props: any) {
              <Slider data={props.data}/> 
 
             <h3 className='beschrijvingPlaceholder'>PROJECTBESCHRIJVING</h3>
-            <p className='beschrijving'>{props.data.description}</p>
+            <p className={backgroundClass}>{props.data.description}</p>
 
             <div id="personalInfo">
                <div id="contactInfoContainer">
