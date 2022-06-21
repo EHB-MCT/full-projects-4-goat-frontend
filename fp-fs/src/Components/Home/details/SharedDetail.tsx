@@ -27,10 +27,10 @@ export default function SharedDetail(){
             <div id='cassetteBackgroundShared'>
             <Link to={"/"}><img src={cross} alt="closing-img" id="crossShared"/></Link>
              <div id='sharedDetailWeb'>
-                 <SharedDetailsWeb></SharedDetailsWeb>
+                 <SharedDetailsWeb data={finalWork}></SharedDetailsWeb>
              </div>
              <div id='sharedDetailMob'>
-                 <SharedDetailsMob></SharedDetailsMob>
+                 <SharedDetailsMob data={finalWork}></SharedDetailsMob>
              </div>
             </div>
         </div>

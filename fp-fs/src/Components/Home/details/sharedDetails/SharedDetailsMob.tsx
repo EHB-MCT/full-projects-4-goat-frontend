@@ -1,4 +1,4 @@
-export default function SharedDetailMob(){
+export default function SharedDetailMob(props: any){
     return (
         <p>mob</p>
     )
