@@ -10,7 +10,7 @@ class FinalWorkService {
         return response.json();
     }
 
-    public async fetchFinalWorkById(id: Number){
+    public async fetchFinalWorkById(id: any){
         const response = await fetch(`${this.url}/finalwork/${id}`)
 
         return response.json();

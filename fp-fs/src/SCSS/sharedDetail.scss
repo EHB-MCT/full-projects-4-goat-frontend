@@ -42,7 +42,25 @@
     overflow-y: scroll;
 }
 
+#sharedDetailWeb{
+    display: none;
+}
+
+#sharedDetailMob{
+    display: block;
+    color: white;
+}
+
 @media (min-width:780px){
+    #sharedDetailWeb{
+        display: block;
+        color: white;
+    }
+
+    #sharedDetailMob{
+        display: none;
+    }
+
     #backgroundRaster {
         position: inherit;
     background-image: url('../Assets/Background-Raster.svg');
