@@ -61,22 +61,22 @@ export default function DetailSide(props: any) {
                 <h3 className={clusterClass}>{cluster}</h3>
             </div>
 
-       {/* <h1 id="projectArtist">{props.data.user.map((users:any) =>{
+        <h1 id="projectArtist">{props.data.user.map((users:any) =>{
                 return users.name
-            })}</h1> */}
+            })}</h1> 
             <div id="projectName">
                 <h5 className='projectPlaceHolder'>PROJECT:</h5>
                 <p className='nameProject'>{props.data.title}</p>
             </div>
 
             {/* <ImageSlider/> */}
-            {/* <Slider data={props.data}/> */}
+             <Slider data={props.data}/> 
 
             <h3 className='beschrijvingPlaceholder'>PROJECTBESCHRIJVING</h3>
             <p className='beschrijving'>{props.data.description}</p>
 
             <div id="personalInfo">
-              {/* <div id="contactInfoContainer">
+               <div id="contactInfoContainer">
                     {props.data.socials.map((social:any) => {
                         return(
                             <div>
@@ -101,7 +101,7 @@ export default function DetailSide(props: any) {
                             </div>
                         )
                     })}
-                </div>  */}
+                </div>  
 
             </div>
             <div id="shareContainer">
