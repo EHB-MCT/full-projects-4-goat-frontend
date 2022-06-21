@@ -21,22 +21,24 @@
 #finalLogoSharedVersion {
     position: fixed;
     width: 180px;
-    top: -5%;
+    top: -8%;
 }
 
 #ehbLogoSharedVersion{
     position: fixed;
     bottom: 5%;
+    width: 150px;
     margin: -5% auto; 
     left: 0;
     right: 0;
+    background-color: black;
 }
 
 
 #cassetteBackgroundShared {
     background-color: black;
     width: 95vw;
-    height: 80vh;
+    height: 78vh;
     margin: auto;
     margin-top: 80px;
     overflow-y: scroll;

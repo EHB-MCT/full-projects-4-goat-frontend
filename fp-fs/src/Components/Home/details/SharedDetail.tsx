@@ -14,8 +14,9 @@ export default function SharedDetail(){
 
     useEffect(()=> {
         finalWorkService.fetchFinalWorkById(params.id)
-        .then(response => {
-            setFinalWork(response)
+        .then(Response => {
+            setFinalWork(Response)
+            console.log(Response)
         })
     }, [params.id])
 
@@ -31,7 +32,7 @@ export default function SharedDetail(){
              </div>
              <div id='sharedDetailMob'>
                  <SharedDetailsMob data={finalWork}></SharedDetailsMob>
-             </div>
+             </div> 
             </div>
         </div>
     )

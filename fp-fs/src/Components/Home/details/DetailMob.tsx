@@ -61,6 +61,12 @@ export default function DetailMob(props: any) {
 
             <div id="personalInfoMob">
              <div id="contactInfoContainerMob">
+             <div id="maiMobl" className='infoFlexMob'>
+                                <img src={mail} alt="mail icon" className='socialIcon'/>
+                                    <p className='mailAdresMob invulTextMob'>{state.user.map((users:any) =>{
+                                        return users.email
+                                    })}</p>
+                                </div>
                     {state.socials.map((social:any) => {
                         return(
                             <div>
@@ -68,12 +74,7 @@ export default function DetailMob(props: any) {
                                     <img src={phone} alt="phone icon" className='socialIcon'/>
                                     <p className='invulTextMob'>+32 {social.tel}</p>
                                 </div>
-                                <div id="maiMobl" className='infoFlexMob'>
-                                <img src={mail} alt="mail icon" className='socialIcon'/>
-                                    <p className='mailAdresMob invulTextMob'>{state.user.map((users:any) =>{
-                                        return users.email
-                                    })}</p>
-                                </div>
+                              
                                 <div id="linkedInMob" className='infoFlexMob'>
                                 <img src={linkedin} alt="linkedin icon" className='socialIcon'/>
                                     <p className='invulTextMob'>{social.linkedin}</p>
@@ -91,7 +92,7 @@ export default function DetailMob(props: any) {
             <RWebShare
                     data={{
                     text:"Bekijk hier mijn final work",
-                    url: `http://localhost:3000/finalwork/${state.id}`,
+                    url: `https://finalshow.be/showcase/finalwork/${state.id}`,
                     title: "Mijn final work",
                     }}
                     sites={["facebook", "instagram", "linkedin"]}
