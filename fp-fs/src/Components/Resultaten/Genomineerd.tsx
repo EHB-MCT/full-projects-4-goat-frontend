@@ -31,20 +31,21 @@ function Genomineerd(){
                         <div className="motionImg">
                             <img className="logoImgcluster" src={Motion} alt="name-cluster-logo" />
                         </div>
-                        <div className="cassettesContainer">
+                        <div className="cassettesContainerNominees">
                             {
-                            finalWorks.map(x => {
+                            finalWorks.filter((x: any) => x.cluster === "motion").sort((a : any, b: any) => b.score - a.score).slice(0,5).map((x:any) => {
                                 return <Cassette data={x} key={x["id"]} ></Cassette>
-                            })}
+                            })
+                            }
                         </div>     
                     </div>       
                     <div className="webAppGenom">
                         <div className="appImg">
                             <img className="logoImgcluster" src={WebApp} alt="name-cluster-logo" />
                         </div>
-                        <div className="cassettesContainer">
+                        <div className="cassettesContainerNominees">
                             {
-                            finalWorks.map(x => {
+                            finalWorks.filter((x: any) => x.cluster === "webApp").sort((a : any, b: any) => b.score - a.score).slice(0,5).map((x:any) => {
                                 return <Cassette data={x} key={x["id"]} ></Cassette>
                             })}
                         </div>     
@@ -53,9 +54,9 @@ function Genomineerd(){
                         <div className="realityImg">
                             <img className="logoImgcluster" src={Reality} alt="name-cluster-logo" />
                         </div>
-                        <div className="cassettesContainer">
+                        <div className="cassettesContainerNominees">
                             {
-                            finalWorks.map(x => {
+                            finalWorks.filter((x: any) => x.cluster === "extendedReality").sort((a : any, b: any) => b.score - a.score).slice(0,5).map((x:any) => {
                                 return <Cassette data={x} key={x["id"]} ></Cassette>
                             })}
                         </div>     
@@ -64,10 +65,13 @@ function Genomineerd(){
                         <div className="smartImg">
                             <img className="logoImgcluster" src={Smart} alt="name-cluster-logo" />
                         </div>
-                        <div className="cassettesContainer">
-                            {
-                            finalWorks.map(x => {
-                                return <Cassette data={x} key={x["id"]} ></Cassette>
+                        <div className="cassettesContainerNominees">
+                        {
+                          finalWorks.filter((x: any) => x.cluster === "smartTechnologies").sort((a : any, b: any) => b.score - a.score).slice(0,5).map((x:any) => {
+                                return (<div className="nominatedCassette">
+                                <Cassette data={x} key={x["id"]} ></Cassette>
+                                </div>
+                                )
                             })}
                         </div>     
                     </div>       
