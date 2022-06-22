@@ -91,5 +91,19 @@
         margin: auto;  
         overflow-y: hidden;
     }
+
+    .CassetteStylingDetail {
+        display: flex;
+    }
+
+    .CassetteStylingDetailCover{
+        height: 60vh;
+        width: 50vw;
+    }
+
+    .CassetteStylingDetailSide{
+        height: 60vh;
+        width: 8vw;
+    }
     
 }

@@ -74,7 +74,7 @@ export default function SharedDetailWeb(props:any){
                 <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
                 <img className="CassetteStylingDetailSide" src={cassette} alt="side" />
                 <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
-                {props.data.title}
+          
             </div>
            
              
