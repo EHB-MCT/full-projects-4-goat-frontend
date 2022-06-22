@@ -96,7 +96,6 @@ export default function DetailMob(props: any) {
                     title: "Mijn final work",
                     }}
                     sites={["facebook", "instagram", "linkedin"]}
-                    onClick={() => console.log("shared successfully!")}
                     >
                 <img  src={share} alt="share-icon" id="shareIconMob"/>
             </RWebShare>
