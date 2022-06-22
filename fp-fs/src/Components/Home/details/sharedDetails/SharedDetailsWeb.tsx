@@ -70,10 +70,16 @@ export default function SharedDetailWeb(props:any){
     return (
         <div className='detailPageContainer'>
             {loading? 
-            <div className="CassetteStylingDetail">               
-                <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
-                <img className="CassetteStylingDetailSide" src={cassette} alt="side" />
-                <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
+            <div className="FullCassetteCoverSideDetail">
+                <div className="CassetteStylingDetail">
+                    <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
+                    <img className="CassetteStylingDetailSide" src={cassette} alt="side" />
+                    <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
+                </div>  
+                <div className="leftCoverDetail">test</div> 
+                <div className="rightCoverDetail">test</div>
+                <div className="sideDetail">test</div>                      
+
           
             </div>
            

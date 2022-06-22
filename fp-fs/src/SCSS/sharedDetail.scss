@@ -98,12 +98,33 @@
 
     .CassetteStylingDetailCover{
         height: 60vh;
-        width: 50vw;
+        width: 29vw;
     }
 
     .CassetteStylingDetailSide{
         height: 60vh;
-        width: 8vw;
+        width: 5.5vw;
+    }
+
+    .leftCoverDetail {
+        position: fixed;
+        color: white;
+        top: 25%;
+        left: 35%;
+    }
+
+    .rightCoverDetail {
+        position: fixed;
+        color: white;
+        top: 25%;
+        right: 29%;
+    }
+
+    .sideDetail {
+        position: fixed;
+        color: white;
+        top: 25%;
+        left: 64%;  
     }
     
 }
