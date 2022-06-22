@@ -10,6 +10,7 @@ import Nav from './Components/Standard/Nav';
 import Footer from './Components/Standard/Footer';
 import DetailMob from './Components/Home/details/DetailMob';
 import BackgroundStripes from './Components/Home/Stripes/BackgroundStripes';
+import SharedDetail from './Components/Home/details/SharedDetail';
 
 
 const root = ReactDOM.createRoot(
@@ -23,6 +24,7 @@ root.render(
       <div id='indexContainer'>
         <Routes>
           <Route path="/"  element={<App/>}/>
+          <Route path="/finalwork/:id" element={<SharedDetail/>}/>
           <Route path="/results"  element={<Results/>}/>
           <Route path="/detail" element={<DetailMob/>}/>
           <Route path="/genomineerden"  element={<Genomineerd/>}/>

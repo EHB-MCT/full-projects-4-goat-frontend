@@ -30,48 +30,12 @@ function Body(){
 
     const handleChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
 
-            // if(selectedWorks.length === finalWorks.length){ 
-            //     if(event.target.value === "Alles"){
-            //         setCluster(finalWorks)
-            //         setSelectedWorks(finalWorks)
-            //     } else {
-            //         var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value)
-            //         setCluster(filteredResults)
-            //         setSelectedWorks(filteredResults)
-            //     }
-            // } else {
-                
-            //     if(event.target.value === "Alles"){
-            //         setCluster(finalWorks)
-            //         var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
-            //         setSelectedWorks(filteredResults)
-            //     } else {
-            //         var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value)
-            //         setCluster(filteredResults)
-            //         var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
-            //         setSelectedWorks(filteredResults)
-            //     }
-            // }
-
-            
             if(selectedWorks.length === finalWorks.length){ 
                 if(event.target.value === "Alles"){
                     setCluster(finalWorks)
                     setSelectedWorks(finalWorks)
-                } else if(event.target.value === "webApp"){
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "web")
-                    setCluster(filteredResults)
-                    setSelectedWorks(filteredResults)
-                }else if(event.target.value === "smartTechnologies"){
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "digitalMaking")
-                    setCluster(filteredResults)
-                    setSelectedWorks(filteredResults)
-                }else if(event.target.value === "motion"){
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "interactiveMotion")
-                    setCluster(filteredResults)
-                    setSelectedWorks(filteredResults)
-                }else if(event.target.value === "extendedReality"){
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value || x.cluster === "alternativeReality")
+                } else {
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value)
                     setCluster(filteredResults)
                     setSelectedWorks(filteredResults)
                 }
@@ -79,30 +43,18 @@ function Body(){
                 
                 if(event.target.value === "Alles"){
                     setCluster(finalWorks)
-                    var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = finalWorks.filter((x:any) => x.user[0].name.toLowerCase().includes(input) || x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
-                } else if(event.target.value === "webApp") {
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "web")
+                } else {
+                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value)
                     setCluster(filteredResults)
-                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
-                    setSelectedWorks(filteredResults)
-                } else if(event.target.value === "smartTechnologies") {
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "digitalMaking")
-                    setCluster(filteredResults)
-                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
-                    setSelectedWorks(filteredResults)
-                }else if(event.target.value === "motion") {
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "interactionMotion")
-                    setCluster(filteredResults)
-                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
-                    setSelectedWorks(filteredResults)
-                }else if(event.target.value === "extendedReality") {
-                    var filteredResults = finalWorks.filter((x: any) => x.cluster === event.target.value|| x.cluster === "alternativeReality")
-                    setCluster(filteredResults)
-                    var filteredResults = filteredResults.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = filteredResults.filter((x:any) => x.user[0].name.toLowerCase().includes(input) || x.title.toLowerCase().includes(input))
                     setSelectedWorks(filteredResults)
                 }
-            }     
+            }
+
+            
+          
     }
 
     const getInput = (inputForm: any) => {
@@ -111,14 +63,12 @@ function Body(){
                 setSelectedWorks(cluster)
             }else {
                 if(selectedWorks.length === finalWorks.length){
-                    var filteredResults = finalWorks.filter((x:any) => x.title.toLowerCase().includes(input))
-                    setSelectedWorks(filteredResults)
+                     var filteredResults = finalWorks.filter((x:any) => x.user[0].name.toLowerCase().includes(inputForm) || x.title.toLowerCase().includes(inputForm))
+                     setSelectedWorks(filteredResults)
                 } else {
-                    var filteredResults = cluster.filter((x:any) => x.title.toLowerCase().includes(input))
+                    var filteredResults = cluster.filter((x:any) => x.user[0].name.toLowerCase().includes(inputForm) || x.title.toLowerCase().includes(inputForm))
                     setSelectedWorks(filteredResults)
                 }
-
-            
             } 
     }
 

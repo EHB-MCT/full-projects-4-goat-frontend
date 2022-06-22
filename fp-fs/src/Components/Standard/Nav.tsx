@@ -1,3 +1,4 @@
+import path from 'path';
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../Assets/Final-Show-Logo.svg';
