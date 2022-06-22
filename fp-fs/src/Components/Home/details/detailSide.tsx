@@ -59,7 +59,7 @@ export default function DetailSide(props: any) {
 
     return (
     <div className='detailContainer'>
-        <img src={cover} alt="" className='cover'/>
+        <img src={cover} alt="cover-cassette" className='cover'/>
 
         <div className='onCoverElement'>
             <div id="stripeCluster">

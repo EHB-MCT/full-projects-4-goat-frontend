@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "SevenSegment";
+    src: url("../Assets/fonts/SevenSegment.ttf");
+}
+
 .Countdown {
     width: 90vw;
     margin: auto
@@ -11,8 +16,10 @@
 }
 
 #CountDownStyle {
+    background-color: #131a0b;
     display: flex;
     justify-content: space-around;
+    border-radius: 10% ;
     
 }
 
@@ -21,12 +28,31 @@
     flex-direction: column;
     align-items: center;
     padding: 5px 10px;
+    
+}
+
+#CountDownStyle div p{
+    color: #fa0d03;
+    font-weight: 600;
+    font-family: "SevenSegment",sans-serif;
+    padding: .25em;
+    text-shadow: 2px 0px 16px;;
 }
 
 #CountDownStyle div p:first-child{
     font-size: 25pt;
+    
 }
 
+div#clock div {
+    margin: 0%;
+    padding: 0%;
+}
+
+div#clock {
+    display: flex;
+    flex-direction: row;
+}
 
 @media (min-width: 780px){
     .Countdown {
@@ -42,9 +68,11 @@
     
     #CountDownStyle div p{
         font-size: 20pt;
+        
     }
 
     #CountDownStyle div p:first-child{
         font-size: 45pt;
+
     }
 }
