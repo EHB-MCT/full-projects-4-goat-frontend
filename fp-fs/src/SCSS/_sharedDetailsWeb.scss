@@ -5,3 +5,30 @@
 .sliderContainer{
    margin: 8vh 0vw 0vw -0.5vh;
 }
+
+.beschrijvingShare{
+    font-size: 10pt;
+    max-height: 25vh;
+    overflow-y: scroll;
+    color: white ;
+}
+
+.infoPersonalShareContainer{
+    padding-top: 3vh;
+}
+
+.shareWebText{
+    font-size: 11pt;
+    margin-bottom: 1vh;
+}
+
+.shareIconDetail{
+    width: 17px;
+}
+
+.shareInfoFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}

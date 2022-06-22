@@ -10,6 +10,11 @@ import cover_3 from '../../../../Assets/cover_3.png';
 import cover_4 from '../../../../Assets/cover_4.png';
 import cover_5 from '../../../../Assets/cover_5.png';
 
+import phone from '../../../../Assets/phone.png';
+import mail from '../../../../Assets/email.png';
+import linkedin from '../../../../Assets/linkedin.png';
+import instagram from '../../../../Assets/instagram.png';
+
 import "../../../../SCSS/_sharedDetailsWeb.scss";
 import Slider from "../Slider";
 
@@ -100,8 +105,42 @@ export default function SharedDetailWeb(props:any){
                 </div> 
 
 
-                {/* <div className="rightCoverDetail">test</div>
-                <div className="sideDetail">test</div>                       */}
+                <div className="rightCoverDetail">
+                    <h3>PROJECTBESCHRIJVING</h3>
+                    <p className="beschrijvingShare">{props.data.description}</p>
+                    
+                    <div id="personalInfo" className="infoPersonalShareContainer">
+                        <div id="contactInfoContainer">
+                            <div id="mail" className='infoFlex shareInfoFlex'>
+                                <img src={mail} alt="mail icon" className='socialIcon shareIconDetail'/>
+                                <p className='mailAdres invulText shareWebText'>{props.data.user.map((users:any) =>{
+                                    return users.email
+                                })}</p>
+                            </div>
+                                {props.data.socials.map((social:any) => {
+                                    return(
+                                        <div>
+                                            <div className='infoFlex shareInfoFlex'>
+                                                <img src={phone} alt="phone icon" className='socialIcon shareIconDetail'/>
+                                                <p className='invulText shareWebText'>+32 {social.tel}</p>
+                                            </div>
+                                            <div id="linkedIn" className='infoFlex shareInfoFlex'>
+                                            <img src={linkedin} alt="linkedin icon" className='socialIcon shareIconDetail'/>
+                                                <p className='invulText shareWebText'>{social.linkedin}</p>
+                                            </div>
+                                            <div id="Instagram" className='infoFlex shareInfoFlex'>
+                                            <img src={instagram} alt="instagram icon" className='socialIcon shareIconDetail'/>
+                                                <p className='invulText shareWebText'>{social.instagram}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>  
+
+                        </div>
+                
+                </div>
+                {/* <div className="sideDetail">test</div> */}
 
           
             </div>
