@@ -67,7 +67,7 @@ export default function DetailSide(props: any) {
                 <h3 className={clusterClass}>{cluster}</h3>
             </div>
 
-        <h1 id="projectArtist">{props.data.user.map((users:any) =>{
+            <h1 id="projectArtist">{props.data.user.map((users:any) =>{
                 return users.name
             })}</h1> 
             <div id="projectName">

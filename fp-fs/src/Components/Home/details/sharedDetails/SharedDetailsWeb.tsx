@@ -10,6 +10,9 @@ import cover_3 from '../../../../Assets/cover_3.png';
 import cover_4 from '../../../../Assets/cover_4.png';
 import cover_5 from '../../../../Assets/cover_5.png';
 
+import "../../../../SCSS/_sharedDetailsWeb.scss";
+import Slider from "../Slider";
+
 export default function SharedDetailWeb(props:any){
     var [loading, setLoading] = useState(Boolean) 
     const [cluster, setCluster] = useState(String)
@@ -76,9 +79,29 @@ export default function SharedDetailWeb(props:any){
                     <img className="CassetteStylingDetailSide" src={cassette} alt="side" />
                     <img className="CassetteStylingDetailCover" src={cover} alt="cover" />
                 </div>  
-                <div className="leftCoverDetail">test</div> 
-                <div className="rightCoverDetail">test</div>
-                <div className="sideDetail">test</div>                      
+                <div className="leftCoverDetail">
+                    <div id="stripeCluster">
+                        <h3 className={clusterClass}>{cluster}</h3>
+                    </div>
+
+                    <h1 id="projectArtist">{props.data.user.map((users:any) =>{
+                        return users.name
+                    })}</h1> 
+                    <div id="projectName">
+                        <h5 className='projectPlaceHolder'>PROJECT:</h5>
+                        <p className='nameProject'>{props.data.title}</p>
+                    </div>
+
+                    <div className="sliderContainer">
+                        <Slider data={props.data}/> 
+                    </div>
+                    
+                    
+                </div> 
+
+
+                {/* <div className="rightCoverDetail">test</div>
+                <div className="sideDetail">test</div>                       */}
 
           
             </div>
