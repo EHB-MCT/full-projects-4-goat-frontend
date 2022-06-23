@@ -60,8 +60,9 @@
     .cassettesContainerNominees{
         margin-left: 20%;
         padding-right: 3%;
-        width: 65%;
-        height: 72vh;
+        max-width: 65%;
+        overflow-x: scroll;
+        height: 77vh;
         display: flex;
         justify-content: space-between;
     }
